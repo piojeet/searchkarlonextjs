@@ -12,7 +12,7 @@ export default function NavBottom() {
 
     return (
         <div>
-            <div className="hidden h-10 items-center bg-buttonColor px-1 xl:flex 3xl:px-4 3xl:pl-0">
+            <div className="hidden h-10 items-center bg-buttonColor px-1 xl:flex 3xl:px-4 3xl:pl-0 relative z-50">
                 <div className="flex w-full items-center justify-between pr-2 text-xs font-medium 3xl:text-sm">
 
                     {NavCategoriesLinks.map((links, index) => (
