@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     screens: {
       xs: '320px',   // Extra small devices, e.g., small phones
+      md: '420',
       sm: '640px',   // Small devices, e.g., larger phones
       lg: '1024px',  // Large devices, e.g., small desktops
       xl: '1169px',  // Extra large devices, e.g., medium desktops
