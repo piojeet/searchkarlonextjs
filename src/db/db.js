@@ -803,3 +803,55 @@ export const GenralToolsData = [
 	},
 	
 ]
+
+
+export const FindCarbyBrandData = [
+	{
+		img: ImageGenral1,
+		name: "Hyundai"
+	},
+	{
+		img: ImageGenral2,
+		name: "Mercedes-Benz"
+	},
+	{
+		img: ImageGenral3,
+		name: "Toyota"
+	},
+	{
+		img: ImageGenral4,
+		name: "Tata"
+	},
+	{
+		img: ImageGenral5,
+		name: "Mahindra"
+	},
+	{
+		img: ImageGenral6,
+		name: "Renault"
+	},
+	{
+		img: ImageGenral7,
+		name: "Nissan"
+	},
+	{
+		img: ImageGenral8,
+		name: "Kia"
+	},
+	{
+		img: ImageGenral9,
+		name: "Maruti"
+	},
+	{
+		img: ImageGenral10,
+		name: "MG"
+	},
+	{
+		img: ImageGenral1,
+		name: "Mahindra"
+	},
+	{
+		img: ImageGenral2,
+		name: "Nissan"
+	},
+]
