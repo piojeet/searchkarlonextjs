@@ -5,6 +5,7 @@ import CarValidation from "@/components/CarValidation/CarValidation";
 import AskExpertis from "@/components/ExpertisQ&A/AskExpertis";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
 import Footer from "@/components/Footer/Footer";
+import QuickLook from "@/components/ForYouQuickLook/QuickLook";
 import FindFuelEfficiency from "@/components/FuelEfficiency/FindFuelEfficiency";
 import GenralTools from "@/components/GenralTools/GenralTools";
 import Insight from "@/components/Insight/Insight";
@@ -25,6 +26,7 @@ export default function CarHome() {
         <LatestNews />
         {/* <BestCashback /> */}
         {/* <BestAppliancesList /> */}
+        <QuickLook />
         <SelectbyPrice />
         <FindCarbyBrand />
         <SearchDealers />

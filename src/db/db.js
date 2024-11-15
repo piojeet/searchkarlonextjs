@@ -855,3 +855,67 @@ export const FindCarbyBrandData = [
 		name: "Nissan"
 	},
 ]
+
+
+
+import Petrol from "../../public/Gas Station.svg"
+export const QuickLookData = [
+	{
+		id: 1,
+		carName: "Jeep Wrangler",
+		price: "₹15.98 - ₹24.50",
+		date: "Launch Date Nov 2024",
+		button: "Alert me when Launch",
+		patrol: "Petrol",
+		tankImg: Petrol,
+		diesel: "Diesel",
+		CNG: "CNG",
+		dataVisible: "Upcoming"
+	},
+	{
+		id: 2,
+		carName: "Jeep Wrangler",
+		price: "₹15.98 - ₹24.50",
+		date: "Launch Date Nov 2024",
+		button: "Alert me when Launch",
+		patrol: "Petrol",
+		tankImg: Petrol,
+		diesel: "Diesel",
+		CNG: "CNG",
+		dataVisible: "Popular"
+	},
+	{
+		id: 3,
+		carName: "Jeep Wrangler",
+		price: "₹15.98 - ₹24.50",
+		date: "Launch Date Nov 2024",
+		button: "Alert me when Launch",
+		patrol: "Petrol",
+		tankImg: Petrol,
+		diesel: "Diesel",
+		CNG: "CNG",
+		dataVisible: "Latest"
+	},
+	{
+		id: 4,
+		carName: "Jeep Wrangler",
+		price: "₹15.98 - ₹24.50",
+		date: "Launch Date Nov 2024",
+		button: "Alert me when Launch",
+		patrol: "Petrol",
+		tankImg: Petrol,
+		diesel: "Diesel",
+		CNG: "CNG",
+	},
+	{
+		id: 5,
+		carName: "Jeep Wrangler",
+		price: "₹15.98 - ₹24.50",
+		date: "Launch Date Nov 2024",
+		button: "Alert me when Launch",
+		patrol: "Petrol",
+		tankImg: Petrol,
+		diesel: "Diesel",
+		CNG: "CNG",
+	},
+]
