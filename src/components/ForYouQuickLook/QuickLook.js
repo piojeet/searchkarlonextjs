@@ -11,8 +11,8 @@ import { Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import { QuickLookData } from "@/db/db";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { QuickLookData } from "@/db/db";
 
 export default function QuickLook() {
   const [selectedCategory, setSelectedCategory] = useState(null); // No category selected by default
@@ -100,7 +100,7 @@ export default function QuickLook() {
                     <div className="text-sm">
                       <div className="border-2 py-2 rounded-md">
                         <Image
-                          src={carquick}
+                          src={item.img}
                           alt="Car"
                           className="lg:w-[8vw] w-28 block mx-auto"
                         />

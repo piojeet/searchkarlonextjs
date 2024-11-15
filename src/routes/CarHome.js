@@ -2,6 +2,7 @@
 // import BestCashback from "@/components/BestCashbackOffers/BestCashback";
 import CarForTco from "@/components/CarForTco/CarForTco";
 import CarValidation from "@/components/CarValidation/CarValidation";
+import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
 import AskExpertis from "@/components/ExpertisQ&A/AskExpertis";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
 import Footer from "@/components/Footer/Footer";
@@ -26,6 +27,7 @@ export default function CarHome() {
         <LatestNews />
         {/* <BestCashback /> */}
         {/* <BestAppliancesList /> */}
+        <ComparePriceandFeatures />
         <QuickLook />
         <SelectbyPrice />
         <FindCarbyBrand />

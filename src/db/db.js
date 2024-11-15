@@ -859,6 +859,7 @@ export const FindCarbyBrandData = [
 
 
 import Petrol from "../../public/Gas Station.svg"
+import carquick from "../../public/carquick.png";
 export const QuickLookData = [
 	{
 		id: 1,
@@ -870,7 +871,8 @@ export const QuickLookData = [
 		tankImg: Petrol,
 		diesel: "Diesel",
 		CNG: "CNG",
-		dataVisible: "Upcoming"
+		dataVisible: "Upcoming",
+		img: carquick
 	},
 	{
 		id: 2,
@@ -882,7 +884,8 @@ export const QuickLookData = [
 		tankImg: Petrol,
 		diesel: "Diesel",
 		CNG: "CNG",
-		dataVisible: "Popular"
+		dataVisible: "Popular",
+		img: carquick
 	},
 	{
 		id: 3,
@@ -894,7 +897,8 @@ export const QuickLookData = [
 		tankImg: Petrol,
 		diesel: "Diesel",
 		CNG: "CNG",
-		dataVisible: "Latest"
+		dataVisible: "Latest",
+		img: carquick
 	},
 	{
 		id: 4,
@@ -906,6 +910,7 @@ export const QuickLookData = [
 		tankImg: Petrol,
 		diesel: "Diesel",
 		CNG: "CNG",
+		img: carquick
 	},
 	{
 		id: 5,
@@ -917,5 +922,76 @@ export const QuickLookData = [
 		tankImg: Petrol,
 		diesel: "Diesel",
 		CNG: "CNG",
+		img: carquick
 	},
-]
+];
+
+
+import compareCarOne from "../../public/carquick.png";
+export const ComparePriceandFeaturesData = [
+	{
+		id: 1,
+		titleTop: "Proton X70",
+		titlebTop: "Executive AWD",
+		priceTop: "Rs. 87.99 lacs",
+		titleBottom: "MG HS",
+        titlebBottom: "1.5 Turbo",
+        priceBottom: "Rs. 89 lacs",
+		imgTop: compareCarOne,
+		imgBottom: compareCarOne,
+		dataVisible: "Mobiles",
+		button: "Compare Now"
+	},
+	{
+		id: 2,
+		titleTop: "Proton X70",
+		titlebTop: "Executive AWD",
+		priceTop: "Rs. 87.99 lacs",
+		titleBottom: "MG HS",
+        titlebBottom: "1.5 Turbo",
+        priceBottom: "Rs. 89 lacs",
+		imgTop: compareCarOne,
+		imgBottom: compareCarOne,
+		dataVisible: "Mobiles",
+		button: "Compare Now"
+	},
+	{
+		id: 3,
+		titleTop: "Proton X70",
+		titlebTop: "Executive AWD",
+		priceTop: "Rs. 87.99 lacs",
+		titleBottom: "MG HS",
+        titlebBottom: "1.5 Turbo",
+        priceBottom: "Rs. 89 lacs",
+		imgTop: compareCarOne,
+		imgBottom: compareCarOne,
+		dataVisible: "Mobiles",
+		button: "Compare Now"
+	},
+	{
+		id: 4,
+		titleTop: "Proton X70",
+		titlebTop: "Executive AWD",
+		priceTop: "Rs. 87.99 lacs",
+		titleBottom: "MG HS",
+        titlebBottom: "1.5 Turbo",
+        priceBottom: "Rs. 89 lacs",
+		imgTop: compareCarOne,
+		imgBottom: compareCarOne,
+		dataVisible: "Mobiles",
+		button: "Compare Now"
+	},
+	{
+		id: 5,
+		titleTop: "Proton X70",
+		titlebTop: "Executive AWD",
+		priceTop: "Rs. 87.99 lacs",
+		titleBottom: "MG HS",
+        titlebBottom: "1.5 Turbo",
+        priceBottom: "Rs. 89 lacs",
+		imgTop: compareCarOne,
+		imgBottom: compareCarOne,
+		dataVisible: "Mobiles",
+		button: "Compare Now"
+	},
+];
