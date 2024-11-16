@@ -100,7 +100,7 @@ export default function SearchUsedCars() {
 
             <button className="text-sm outline-none border-none bg-lightOrange hover:bg-lightOrange/90 text-whiteColor py-2 px-4 rounded-md ml-[6vw] block w-fit">Get on Road Price</button>
 
-            <Image src={Car} alt="car" className="absolute right-0 top-1/2 -translate-y-1/2 w-[15vw]" />
+            <Image src={Car} alt="car" className="absolute right-0 lg:top-1/2 bottom-0 lg:-translate-y-1/2 lg:w-[15vw] w-44 md:block hidden" />
         </div>
     </div>
   )

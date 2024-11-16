@@ -150,7 +150,7 @@ export default function SearchProduct() {
 									Rs
 								</p>
 								<input
-									className="h-8 w-20 border-none shadow-none focus-visible:ring-0"
+									className="h-8 lg:w-20 w-16 border-none shadow-none focus-visible:ring-0"
 									type="text"
 									name="min"
 									placeholder="Min"
@@ -164,7 +164,7 @@ export default function SearchProduct() {
 									Rs
 								</p>
 								<input
-									className="h-8 w-20 border-none shadow-none focus-visible:ring-0"
+									className="h-8 lg:w-20 w-16 border-none shadow-none focus-visible:ring-0"
 									type="text"
 									name="max"
 									placeholder="Max"

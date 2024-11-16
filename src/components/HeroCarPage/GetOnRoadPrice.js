@@ -60,13 +60,13 @@ export default function GetOnRoadPrice() {
             <div className="relative bg-whiteColor p-4 rounded-md">
             {/* Original Dropdown Implementation */}
             <div className="text-sm">
-                <div className="mb-4">
+                <div className="mb-4 flex items-center gap-2 flex-wrap">
                     {onRoadPriceData.map((item, index) => (
                         <select
                             name=""
                             id=""
                             key={index}
-                            className="py-2 border-2 px-2 outline-none rounded-md mr-2"
+                            className="py-2 border-2 px-2 outline-none rounded-md"
                         >
                             {item.map((value, subIndex) => (
                                 <option key={subIndex} value={value}>
@@ -111,7 +111,7 @@ export default function GetOnRoadPrice() {
 
             <button className="text-sm outline-none border-none bg-lightOrange hover:bg-lightOrange/90 text-whiteColor py-2 px-4 rounded-md ml-[6vw] block w-fit">Get on Road Price</button>
 
-            <Image src={Car} alt="car" className="absolute right-0 top-1/2 -translate-y-1/2 w-[15vw]" />
+            <Image src={Car} alt="car" className="absolute right-0 lg:top-1/2 bottom-0 lg:-translate-y-1/2 lg:w-[15vw] w-44 md:block hidden" />
         </div>
 
         <SearchUsedCars />
