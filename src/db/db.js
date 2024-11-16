@@ -928,6 +928,7 @@ export const QuickLookData = [
 
 
 import compareCarOne from "../../public/carquick.png";
+import Car from '@/app/car/page'
 export const ComparePriceandFeaturesData = [
 	{
 		id: 1,
@@ -994,4 +995,48 @@ export const ComparePriceandFeaturesData = [
 		dataVisible: "Mobiles",
 		button: "Compare Now"
 	},
+];
+
+
+
+export const CategoriesData = [
+	{ icon: Bag, label: "Deals" },
+	{ icon: Clock, label: "News" },
+	{ icon: Calendar, label: "Flights" },
+	{ icon: hotels, label: "Hotels" },
+	{ icon: OnlinePayment, label: "Mobiles" },
+	{ icon: cars, label: "Cars" },
+	{ icon: bikes, label: "Bikes" },
+	{ icon: laptops, label: "Laptops" },
+	{ icon: machines, label: "Washing Machines" },
+	{ icon: tabs, label: "Tablets" },
+	{ icon: Bag, label: "Deals" },
+	{ icon: Clock, label: "News" },
+	{ icon: Calendar, label: "Flights" },
+	{ icon: hotels, label: "Hotels" },
+	{ icon: OnlinePayment, label: "Mobiles" },
+	{ icon: cars, label: "Cars" },
+	{ icon: bikes, label: "Bikes" },
+	{ icon: laptops, label: "Laptops" },
+	{ icon: machines, label: "Washing Machines" },
+	{ icon: tabs, label: "Tablets" },
+];
+
+
+export const Features = [
+	{ label: "Apple" },
+	{ label: "Dual SIM" },
+	{ label: "Fingerprint" },
+	{ label: "Bluetooth" },
+	{ label: "Android" },
+	{ label: "MicroSD" },
+];
+
+export const Items = [
+	{ name: "Mobiles", icon: OnlinePayment },
+	{ name: "Cars", icon: cars },
+	{ name: "Flight", icon: Calendar },
+	{ name: "Bikes", icon: bikes },
+	{ name: "Laptops", icon: laptops },
+	{ name: "Hotels", icon: hotels },
 ];

@@ -1,7 +1,9 @@
 // import BestAppliancesList from "@/components/BestAppliancesList/BestAppliancesList";
 // import BestCashback from "@/components/BestCashbackOffers/BestCashback";
+import BannerSwiper from "@/components/Bannners/BannerSwiper";
 import CarForTco from "@/components/CarForTco/CarForTco";
 import CarValidation from "@/components/CarValidation/CarValidation";
+import Categories from "@/components/Categories/Categories";
 import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
 import AskExpertis from "@/components/ExpertisQ&A/AskExpertis";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
@@ -9,6 +11,7 @@ import Footer from "@/components/Footer/Footer";
 import QuickLook from "@/components/ForYouQuickLook/QuickLook";
 import FindFuelEfficiency from "@/components/FuelEfficiency/FindFuelEfficiency";
 import GenralTools from "@/components/GenralTools/GenralTools";
+import CarPageHero from "@/components/HeroCarPage/CarPageHero";
 import Insight from "@/components/Insight/Insight";
 import NavTop from "@/components/Navbar/NavbarTop";
 import NavBottom from "@/components/Navbar/NavBottom";
@@ -24,9 +27,11 @@ export default function CarHome() {
         <NavTop />
         <NavMiddle />
         <NavBottom />
-        <LatestNews />
         {/* <BestCashback /> */}
         {/* <BestAppliancesList /> */}
+        <CarPageHero />
+        <Categories />
+        <BannerSwiper />
         <ComparePriceandFeatures />
         <QuickLook />
         <SelectbyPrice />
@@ -37,6 +42,7 @@ export default function CarHome() {
         <GenralTools />
         <CarValidation />
         <Insight />
+        <LatestNews />
         <AskExpertis />
         <PopularPriceList />
         <Footer />

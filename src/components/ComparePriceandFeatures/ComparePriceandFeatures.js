@@ -5,12 +5,12 @@ import Image from "next/image";
 import mobile from "../../../public/mobile.png";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Grid, Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, } from "lucide-react";
 import { ComparePriceandFeaturesData } from "@/db/db";
 
 export default function ComparePriceandFeatures() {
@@ -45,9 +45,28 @@ export default function ComparePriceandFeatures() {
             <div className="lg:text-xl text-lg font-semibold">For You Quick Look</div>
             {/* Category Selection */}
             <div className="text-sm mt-4 overflow-hidden">
-                <div className="overflow-auto flex items-center gap-1 whitespace-nowrap">
-                {data.map((category) => (
-                    <div key={category.id}>
+                <div className="overflow-auto whitespace-nowrap">
+                <Swiper
+                modules={[Grid]}
+                pagination={{ clickable: true, dynamicBullets: true }}
+                slidesPerView="auto"
+                spaceBetween={10}
+                className="pb-5 lg:pb-0"
+                grabCursor={true}
+                touchRatio={1.5}
+                breakpoints={{
+                    1024: {
+                        slidesPerView: "auto",
+                        spaceBetween: 20,
+                        pagination: {
+                            enabled: false,
+                        },
+                    },
+                }}
+                >
+                    {data.map((category) => (
+                    <SwiperSlide key={category.id} className="flex !w-fit items-center justify-center lg:w-fit">
+                    <div>
                         <input
                             type="radio"
                             id={category.id}
@@ -64,7 +83,9 @@ export default function ComparePriceandFeatures() {
                             <div>{category.name}</div>
                         </label>
                     </div>
+                    </SwiperSlide>
                 ))}
+                </Swiper>
                 </div>
             </div>
 
@@ -136,14 +157,14 @@ export default function ComparePriceandFeatures() {
 
                 {/* Swiper Navigation Buttons */}
                 <button
-                    className={`swiper-button-next-compare lg:py-6 lg:px-1 py-4 rounded-md text-white bg-lightOrange absolute lg:right-6 right-4 top-1/2 -translate-y-1/2 z-50 cursor-pointer ${
+                    className={`swiper-button-next-compare py-3 rounded-md text-white bg-lightOrange absolute right-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${
                         isAtEnd ? "opacity-0 pointer-events-none" : ""
                     }`}
                 >
                     <ChevronRight />
                 </button>
                 <button
-                    className={`swiper-button-prev-compare lg:py-6 lg:px-1 py-4 rounded-md text-white bg-lightOrange absolute lg:left-6 left-4 top-1/2 -translate-y-1/2 z-50 cursor-pointer ${
+                    className={`swiper-button-prev-compare py-3 rounded-md text-white bg-lightOrange absolute lg:left-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${
                         isAtStart ? "opacity-0 pointer-events-none" : ""
                     }`}
                 >

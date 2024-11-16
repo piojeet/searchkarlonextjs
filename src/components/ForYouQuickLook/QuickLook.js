@@ -139,8 +139,8 @@ export default function QuickLook() {
             )}
           </Swiper>
 
-          <button className={`swiper-button-next-poplar lg:py-6 lg:px-1 py-4 rounded-md text-whiteColor bg-lightOrange absolute lg:right-6 right-4 top-1/2 -translate-y-1/2 z-50 cursor-pointer ${isAtEnd ? 'hidden' : ''}`}><ChevronRight /></button>
-          <button className={`swiper-button-prev-poplar lg:py-6 lg:px-1 py-4 rounded-md text-whiteColor bg-lightOrange absolute lg:left-6 left-4 top-1/2 -translate-y-1/2 z-50 cursor-pointer ${isAtStart ? 'hidden' : ''}`}><ChevronLeft /></button>
+          <button className={`swiper-button-next-poplar py-3 rounded-md text-whiteColor bg-lightOrange absolute right-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${isAtEnd ? 'hidden' : ''}`}><ChevronRight /></button>
+          <button className={`swiper-button-prev-poplar py-3 rounded-md text-whiteColor bg-lightOrange absolute left-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${isAtStart ? 'hidden' : ''}`}><ChevronLeft /></button>
         </div>
       </div>
     </div>
