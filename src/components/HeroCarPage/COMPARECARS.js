@@ -37,7 +37,7 @@ export default function COMPARECARS() {
                     ))}
                     </div>
                 </div>
-                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                <div className="flex items-start gap-2 text-xs md:text-sm whitespace-nowrap">
                     <div>Car 1</div>
                     <div className="flex items-center gap-2 text-sm flex-wrap">
                     {car2.map((car, i) => (
@@ -51,7 +51,7 @@ export default function COMPARECARS() {
                     ))}
                     </div>
                 </div>
-                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                <div className="flex items-start gap-2 md:text-sm text-xs whitespace-nowrap">
                     <div>Car 1</div>
                     <div className="flex items-center gap-2 text-sm flex-wrap">
                     {car3.map((car, i) => (
