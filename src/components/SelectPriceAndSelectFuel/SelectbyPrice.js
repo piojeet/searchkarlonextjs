@@ -18,7 +18,7 @@ export default function SelectbyPrice() {
             <div className="lg:text-xl font-semibold text-lg">Select by Price</div>
             <div className="grid xs:grid-cols-2 gap-4 border-2 p-4 rounded-md mt-4">
             {priceData.map((item, index) => (
-                <div key={index} className="text-sm">
+                <div key={index} className="md:text-sm text-xs">
                     <input
                         type="radio"
                         name="SelectPrice"
