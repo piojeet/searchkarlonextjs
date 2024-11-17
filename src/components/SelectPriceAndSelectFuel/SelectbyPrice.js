@@ -27,7 +27,7 @@ export default function SelectbyPrice() {
                     />
                     <label
                     htmlFor={item.id}
-                    className="block p-2 py-4 rounded-md cursor-pointer bg-gray-50 transition-colors duration-200 peer-checked:bg-lightOrange border-2"
+                    className="block md:p-2 p-1 py-4 rounded-md cursor-pointer bg-gray-50 transition-colors duration-200 peer-checked:bg-lightOrange border-2"
                 >
                     
                     {item.price}
