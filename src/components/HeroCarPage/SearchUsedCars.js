@@ -52,7 +52,7 @@ export default function SearchUsedCars() {
   return (
     <div className="bg-whiteColor p-4 rounded-md">
         <div className="relative">
-            <div className="flex items-center gap-2 text-sm mb-4">
+            <div className="flex items-center gap-2 text-sm mb-4 md:flex-row flex-col">
                 <div className="font-semibold">Price Range</div>
 
                 <div className="text-sm flex items-center gap-2">
