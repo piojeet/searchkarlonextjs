@@ -21,7 +21,7 @@ export default function SelectbyFuelType() {
             <div className="mt-4 border-2 rounded-md md:p-4 p-2 grid grid-cols-2 md:gap-4 gap-2">
                 {data.map((item, i) => (
                     <div key={i} className="p-2 border-2 rounded-md bg-gray-50 flex flex-col gap-2 justify-center items-center">
-                        <Image src={item.img} alt={item.name} className="w-9" />
+                        <Image src={item.img} alt={item.name} className="w-5" />
                         <div className="text-sm font-semibold">{item.name}</div>
                     </div>
                 ))}
