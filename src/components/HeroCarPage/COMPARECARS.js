@@ -6,19 +6,16 @@ export default function COMPARECARS() {
         ["Make", "demo1", "demo2", "demo3"],
         ["Model", "demo1", "demo2", "demo3"],
         ["Variant", "demo1", "demo2", "demo3"],
-        ["Body Type", "demo1", "demo2", "demo3"],
     ];
     const car2 = [
         ["Make", "demo1", "demo2", "demo3"],
         ["Model", "demo1", "demo2", "demo3"],
         ["Variant", "demo1", "demo2", "demo3"],
-        ["Body Type", "demo1", "demo2", "demo3"],
     ];
     const car3 = [
         ["Make", "demo1", "demo2", "demo3"],
         ["Model", "demo1", "demo2", "demo3"],
         ["Variant", "demo1", "demo2", "demo3"],
-        ["Body Type", "demo1", "demo2", "demo3"],
     ];
 
     return (
@@ -27,8 +24,8 @@ export default function COMPARECARS() {
                 <div className="text-center text-base font-semibold">COMPARE CARS</div>
 
                 <div className="flex items-start gap-2 text-sm whitespace-nowrap">
-                    <div>Car 1</div>
-                    <div className="flex items-center gap-2 text-sm flex-wrap">
+                    <div className="text-sm">Car 1</div>
+                    <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
                     {car1.map((car, i) => (
                         <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md">
                             {car.map((value, subIndex) => (
