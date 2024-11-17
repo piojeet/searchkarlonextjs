@@ -4,6 +4,7 @@
 // import BestCashback from "@/components/BestCashbackOffers/BestCashback";
 import BannerSwiper from "@/components/Bannners/BannerSwiper";
 import CarForTco from "@/components/CarForTco/CarForTco";
+import CarList from "@/components/CarListCategories/CarList";
 import CarValidation from "@/components/CarValidation/CarValidation";
 import Categories from "@/components/Categories/Categories";
 import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
@@ -34,6 +35,7 @@ export default function CarHome() {
         <CarPageHero />
         <Categories />
         <BannerSwiper />
+        <CarList />
         <ComparePriceandFeatures />
         <QuickLook />
         <SelectbyPrice />
