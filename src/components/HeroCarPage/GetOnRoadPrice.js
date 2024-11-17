@@ -12,7 +12,6 @@ export default function GetOnRoadPrice() {
         ["Make", "demo1", "demo2", "demo3"],
         ["Model", "demo4", "demo5", "demo6"],
         ["Variant", "demo4", "demo5", "demo6"],
-        ["Body Type", "demo4", "demo5", "demo6"],
     ];
 
     const cityData = [
@@ -59,14 +58,14 @@ export default function GetOnRoadPrice() {
         <div className="grid lg:grid-cols-2 gap-2">
             <div className="relative bg-whiteColor p-4 rounded-md">
             {/* Original Dropdown Implementation */}
-            <div className="text-sm">
+            <div className="md:text-sm text-xs">
                 <div className="mb-4 flex items-center gap-2 flex-wrap">
                     {onRoadPriceData.map((item, index) => (
                         <select
                             name=""
                             id=""
                             key={index}
-                            className="py-2 border-2 px-2 outline-none rounded-md"
+                            className="py-2 border-2 md:px-2 px-1 outline-none rounded-md"
                         >
                             {item.map((value, subIndex) => (
                                 <option key={subIndex} value={value}>
