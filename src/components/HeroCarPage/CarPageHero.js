@@ -1,3 +1,5 @@
+"use client"
+
 import COMPARECARS from "./COMPARECARS";
 import FreeCarListing from "./FreeCarListing";
 import GetOnRoadPrice from "./GetOnRoadPrice";
