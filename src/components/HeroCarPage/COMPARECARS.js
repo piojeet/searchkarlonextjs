@@ -37,9 +37,9 @@ export default function COMPARECARS() {
                     ))}
                     </div>
                 </div>
-                <div className="flex items-start gap-2 text-xs md:text-sm whitespace-nowrap">
-                    <div>Car 1</div>
-                    <div className="flex items-center gap-2 text-sm flex-wrap">
+                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                    <div className="text-sm">Car 2</div>
+                    <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
                     {car2.map((car, i) => (
                         <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md">
                             {car.map((value, subIndex) => (
@@ -51,9 +51,9 @@ export default function COMPARECARS() {
                     ))}
                     </div>
                 </div>
-                <div className="flex items-start gap-2 md:text-sm text-xs whitespace-nowrap">
-                    <div>Car 1</div>
-                    <div className="flex items-center gap-2 text-sm flex-wrap">
+                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                    <div className="text-sm">Car 3</div>
+                    <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
                     {car3.map((car, i) => (
                         <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md">
                             {car.map((value, subIndex) => (
