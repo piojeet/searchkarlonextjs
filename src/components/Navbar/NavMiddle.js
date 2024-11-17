@@ -58,7 +58,7 @@ export default function NavMiddle() {
                 <div className="hidden xl:block">
                     <div className="flex h-10 items-center gap-3 rounded-md border-2 px-5 py-1 text-xs font-semibold 3xl:text-sm">
                         <div className="flex items-center gap-2">
-                            <p>Mobile App</p>
+                            <div>Mobile App</div>
 
                             <Link href="#">
                                 <Image src={Apple} alt="apple" className="size-5 object-cover" />
@@ -68,7 +68,7 @@ export default function NavMiddle() {
                             </Link>
                         </div>
                         <div className="flex items-center gap-2">
-                            <p>Mobile App</p>
+                            <div>Mobile App</div>
 
                             <Link href="#">
                                 <Image src={Chrome} alt="apple" className="size-5 object-cover" />

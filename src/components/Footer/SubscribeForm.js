@@ -1,3 +1,5 @@
+"use client"
+
 export default function SubscribeForm() {
     return (
         <div className="relative flex flex-col gap-3 my-4 border-t border-b border-gray-400 py-3">

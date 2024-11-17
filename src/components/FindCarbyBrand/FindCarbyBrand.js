@@ -1,3 +1,5 @@
+"use client"
+
 
 import { FindCarbyBrandData } from "@/db/db";
 import Image from "next/image";

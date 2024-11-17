@@ -53,11 +53,13 @@ export default function Categories() {
                         className="flex !w-fit items-center justify-center lg:w-fit"
                     >
                         <div className="flex h-full w-20 flex-col items-center justify-center gap-2">
+                            <div className="size-10 md:size-12 sm:size-14 xl:size-16">
                             <Image
-                                className="size-10 ssm:size-12 sm:size-14 xl:size-16"
+                                className="w-auto h-auto object-contain"
                                 src={slide.icon}
                                 alt="img"
                             />
+                            </div>
                             <p className="text-center text-sm font-medium lg:text-base">
                                 {slide.label}
                             </p>

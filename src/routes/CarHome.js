@@ -1,3 +1,5 @@
+"use client"
+
 // import BestAppliancesList from "@/components/BestAppliancesList/BestAppliancesList";
 // import BestCashback from "@/components/BestCashbackOffers/BestCashback";
 import BannerSwiper from "@/components/Bannners/BannerSwiper";

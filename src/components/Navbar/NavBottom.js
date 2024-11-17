@@ -47,7 +47,7 @@ export default function NavBottom() {
                 <div className="ml-auto hidden w-fit items-center justify-center text-xs lg:flex 3xl:text-sm">
                     <div className="relative group">
                         <Link href="#" className="flex h-10 items-center justify-center bg-[#DC4F45] px-2 py-1 font-medium text-white">
-                            <p>Compare</p>
+                            <div>Compare</div>
                             <ChevronDown className="size-4" />
                         </Link>
 
@@ -60,7 +60,7 @@ export default function NavBottom() {
                     </div>
                     <div className="relative group">
                         <Link href="#" className="flex h-10 items-center justify-center bg-[#C8DD16] px-2 py-1 font-medium text-black">
-                            <p>Coupons</p>
+                            <div>Coupons</div>
                             <ChevronDown className="size-4" />
                         </Link>
 

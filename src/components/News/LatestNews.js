@@ -1,3 +1,5 @@
+"use client"
+
 import { News, Stories } from "@/db/db";
 import NewsCard from "./NewsCard";
 import TopStories from "./TopStories";

@@ -1,3 +1,5 @@
+"use client"
+
 import { PopularPriceLiseData } from "@/db/db";
 import Image from "next/image";
 
@@ -12,7 +14,7 @@ export default function PopularPriceList() {
                         <div className="size-10">
                             <Image src={PopularPriceList.image} alt="IMG" className="w-full h-full object-contain" />
                         </div>
-                        <p>{PopularPriceList.title}</p>
+                        <div>{PopularPriceList.title}</div>
                     </div>
                 ))}
             </div>

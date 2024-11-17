@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import SocialMediaLinks from "./SocialMediaLinks";
 import SpecialPageAccordion from "./SpecialPageAccordion";

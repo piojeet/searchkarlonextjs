@@ -1,3 +1,5 @@
+"use client"
+
 import { useAuthContext } from "@/context/AuthContext";
 import { ChevronDown, ChevronRight, X } from "lucide-react";
 import Link from "next/link";
@@ -36,19 +38,19 @@ export default function NavSideBar() {
           <nav className="flex items-center justify-between gap-3 px-1 pt-5 font-medium text-xs">
             <Link href="#" className="inline-flex flex-col justify-center items-center gap-1 whitespace-nowrap">
               <div className="p-2 bg-[#F1F6FC] rounded-full w-fit"><Login className="size-6" /></div>
-              <p>Login</p>
+              <div>Login</div>
             </Link>
             <Link href="#" className="inline-flex flex-col justify-center items-center gap-1 whitespace-nowrap">
               <div className="p-2 bg-[#F1F6FC] rounded-full w-fit"><UserMobile className="size-6" /></div>
-              <p>Sign Up</p>
+              <div>Sign Up</div>
             </Link>
             <Link href="#" className="inline-flex flex-col justify-center items-center gap-1 whitespace-nowrap">
               <div className="p-2 bg-[#F1F6FC] rounded-full"><Compare className="size-6" /></div>
-              <p>Compare</p>
+              <div>Compare</div>
             </Link>
             <Link href="#" className="inline-flex flex-col justify-center items-center gap-1 whitespace-nowrap">
               <div className="p-2 bg-[#F1F6FC] rounded-full"><Cashback className="size-6" /></div>
-              <p>Cashback</p>
+              <div>Cashback</div>
             </Link>
           </nav>
 

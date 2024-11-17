@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Gas from "../../../public/Gas Station.svg"
 import Diesel from "../../../public/desel.svg"

@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import Twitter from "../Icons/Twitter";
 import Linkedin from "../Icons/Linkedin";

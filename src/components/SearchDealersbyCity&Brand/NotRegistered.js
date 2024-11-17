@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import RegisterdCar from "../../../public/registerdcar.png"
 

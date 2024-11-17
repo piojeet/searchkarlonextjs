@@ -1,3 +1,5 @@
+"use client"
+
 import { GenralToolsData } from "@/db/db";
 import Image from "next/image";
 

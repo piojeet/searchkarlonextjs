@@ -1,4 +1,4 @@
-
+"use client"
 
 import Bag from '../../public/categories/Bag.svg'
 import Clock from '../../public/categories/Clock.svg'
@@ -35,9 +35,9 @@ import Dell from '../../public/brands-logo/dell.png'
 import Cleartrip from '../../public/brands-logo/cleartrip.png'
 
 
-import news1 from "../../public/Technology_Trends.avif"
+import news1 from "../../public/glob.png"
 
-import stories1 from "../../public/Technology_Trends.avif"
+import stories1 from "../../public/glob.png"
 
 
 import Motrola from "../../public/motrola.png"

@@ -1,3 +1,5 @@
+"use client"
+
 import { insightData } from "@/db/db";
 
 export default function Insight() {
