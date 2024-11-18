@@ -17,6 +17,7 @@ export default function CarList() {
         { id: 1, name: "Body Type", img: carCategories, dataTagL: "body type", dataTag: "tag1" },
         { id: 2, name: "SUV", img: carCategories, dataTagL: "suv", dataTag: "tag2" },
         { id: 3, name: "Sedan", img: carCategories, dataTagL: "sedan", dataTag: "tag3" },
+        { id: 4, name: "Sedan", img: carCategories, dataTagL: "sedan", dataTag: "tag3" },
     ];
 
     const selectData = [
@@ -32,10 +33,15 @@ export default function CarList() {
         { id: 10, name: "View All", dataTag: "tag10" },
     ];
 
-    const [activeTag, setActiveTag] = useState("");
+    const [activeUpperTag, setActiveUpperTag] = useState(""); // For upper buttons
+    const [activeLowerTag, setActiveLowerTag] = useState(""); // For lower buttons
 
-    const handleButtonClick = (tag) => {
-        setActiveTag(tag); // Update active tag
+    const handleUpperButtonClick = (tag) => {
+        setActiveUpperTag(tag); // Update only for upper buttons
+    };
+
+    const handleLowerButtonClick = (tag) => {
+        setActiveLowerTag(tag); // Update only for lower buttons
     };
 
     const swiperRef = useRef(null);
@@ -58,7 +64,7 @@ export default function CarList() {
             >
                 {categoriesImgData.map((item) => (
                     <SwiperSlide key={item.id} className="!w-24">
-                        <div>
+                        <div key={item.id}>
                             <input
                                 type="radio"
                                 name="categories"
@@ -67,8 +73,9 @@ export default function CarList() {
                             />
                             <label
                                 htmlFor={`category-${item.id}`}
-                                className="border-2 block p-1 peer-checked:border-lightOrange"
-                                onClick={() => handleButtonClick(item.dataTag)}
+                                className={`border-2 block p-1 ${activeUpperTag === item.dataTag ? "border-lightOrange" : ""
+                                    }`}
+                                onClick={() => handleUpperButtonClick(item.dataTag)}
                             >
                                 <Image
                                     src={item.img}
@@ -84,17 +91,25 @@ export default function CarList() {
                 ))}
             </Swiper>
 
-            {/* Buttons */}
-            <div className="flex items-center gap-4">
-                {selectData.map((data) => (
-                    <button key={data.id} className={`text-blue-600`} onClick={() => handleButtonClick(data.dataTag)}>{data.name}</button>
-                ))}
+            <div className="overflow-hidden mt-4">
+                <div className=" flex items-center gap-4 flex-wrap whitespace-nowrap">
+                    {selectData.map((data) => (
+                        <button
+                            key={data.id}
+                            className={`text-blue-600 leading-none ${activeLowerTag === data.dataTag ? "border-b-2 border-blue-600" : ""
+                                }`}
+                            onClick={() => handleLowerButtonClick(data.dataTag)}
+                        >
+                            {data.name}
+                        </button>
+                    ))}
+                </div>
             </div>
 
             {/* Car List Grid */}
             <div className="text-sm mt-6 relative">
                 <Swiper
-                slidesPerView={1}
+                    slidesPerView={1}
                     spaceBetween={15}
                     ref={swiperRef}
                     onSlideChange={handleSlideChange}
@@ -109,133 +124,137 @@ export default function CarList() {
                         1024: { slidesPerView: 4 },
                     }}
                     className="mySwiper">
-                {CarListCategroiesData.map((item) => (
-                    <SwiperSlide key={item.id}>
-                    <div
-                        className="space-y-2 p-4 border-2 rounded-3xl" data-tag="tag1"
-                        style={{ display: activeTag === "tag1" || activeTag === "" ? "block" : "none" }}
-                    >
-                        {/* Car Image */}
-                        <div>
-                            <Image src={item.carImg} alt="car" />
-                        </div>
-                        <div className="w-full h-[1px] bg-gray-300"></div>
-
-                        {/* Car Info */}
-                        <div className="flex items-center justify-between">
-                            <div>{item.carName}</div>
-                            <div className="flex items-center gap-1 text-[#5DB506]">
-                                {item.rating}
-                                <Star fill="#5DB506" strokeWidth={0} size={16} />
-                            </div>
-                        </div>
-
-                        <div className="flex items-center gap-2">
-                            <div>Starting at ₹</div>
-                            <div className="font-semibold">{item.carPirice}</div>
-                        </div>
-
-                        <div className="flex items-center justify-center text-whiteColor gap-2 bg-lightOrange py-2 px-4 clip-path-custom text-center">
-                            <div>Save upto ₹</div>
-                            <div className="font-semibold">{item.savePrice}</div>
-                        </div>
-
-                        <div className="text-center">{item.saveTitle}</div>
-
-                        {/* Additional Details */}
-                        <div className="flex items-end justify-between">
-                            {/* Engine CC */}
-                            <div className="flex flex-col justify-center items-center gap-1">
-                                <Image
-                                    src={item.ccImg}
-                                    alt={item.cc}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div>{item.cc}</div>
-                            </div>
-
-                            {/* Fuel */}
-                            <div className="flex flex-col justify-center items-center gap-1">
-                                <Image
-                                    src={item.fuelImg}
-                                    alt={item.fuel}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div>{item.fuel}</div>
-                            </div>
-
-                            {/* Seating */}
-                            <div className="flex flex-col justify-center items-center gap-1">
-                                <Image
-                                    src={item.seatImg}
-                                    alt={item.seat}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div>{item.seat}</div>
-                            </div>
-
-                            {/* Transmission */}
-                            <div className="flex flex-col justify-center items-center gap-1">
-                                <Image
-                                    src={item.transmissionImg}
-                                    alt={item.transmission}
-                                    width={50}
-                                    height={50}
-                                />
-                                <div>{item.transmission}</div>
-                            </div>
-                        </div>
-
-                        {/* Last In Day and Score */}
-                        <div className="flex items-center justify-between mt-4">
-                            <div className="flex gap-2">
-                                <div>{item.lastInDay}</div>
-                                <div>In Last 30 Days</div>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <div className="p-2 py-1.5 bg-[#5DB506] text-whiteColor">
-                                    {item.successScure}
+                    {CarListCategroiesData.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <div
+                                className="space-y-2 p-4 border-2 rounded-3xl" data-tag="tag1"
+                                style={{
+                                    display:
+                                      (activeLowerTag === "tag1" || activeLowerTag === "") &&
+                                      activeUpperTag === "tag1"
+                                        ? "block"
+                                        : "none",
+                                  }}
+                            >
+                                {/* Car Image */}
+                                <div>
+                                    <Image src={item.carImg} alt="car" />
                                 </div>
-                                <div>Our Score</div>
+                                <div className="w-full h-[1px] bg-gray-300"></div>
+
+                                {/* Car Info */}
+                                <div className="flex items-center justify-between">
+                                    <div>{item.carName}</div>
+                                    <div className="flex items-center gap-1 text-[#5DB506]">
+                                        {item.rating}
+                                        <Star fill="#5DB506" strokeWidth={0} size={16} />
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center gap-2">
+                                    <div>Starting at ₹</div>
+                                    <div className="font-semibold">{item.carPirice}</div>
+                                </div>
+
+                                <div className="flex items-center justify-center text-whiteColor gap-2 bg-lightOrange py-2 px-4 clip-path-custom text-center">
+                                    <div>Save upto ₹</div>
+                                    <div className="font-semibold">{item.savePrice}</div>
+                                </div>
+
+                                <div className="text-center">{item.saveTitle}</div>
+
+                                {/* Additional Details */}
+                                <div className="flex items-end justify-between">
+                                    {/* Engine CC */}
+                                    <div className="flex flex-col justify-center items-center gap-1">
+                                        <Image
+                                            src={item.ccImg}
+                                            alt={item.cc}
+                                            width={50}
+                                            height={50}
+                                        />
+                                        <div>{item.cc}</div>
+                                    </div>
+
+                                    {/* Fuel */}
+                                    <div className="flex flex-col justify-center items-center gap-1">
+                                        <Image
+                                            src={item.fuelImg}
+                                            alt={item.fuel}
+                                            width={50}
+                                            height={50}
+                                        />
+                                        <div>{item.fuel}</div>
+                                    </div>
+
+                                    {/* Seating */}
+                                    <div className="flex flex-col justify-center items-center gap-1">
+                                        <Image
+                                            src={item.seatImg}
+                                            alt={item.seat}
+                                            width={50}
+                                            height={50}
+                                        />
+                                        <div>{item.seat}</div>
+                                    </div>
+
+                                    {/* Transmission */}
+                                    <div className="flex flex-col justify-center items-center gap-1">
+                                        <Image
+                                            src={item.transmissionImg}
+                                            alt={item.transmission}
+                                            width={50}
+                                            height={50}
+                                        />
+                                        <div>{item.transmission}</div>
+                                    </div>
+                                </div>
+
+                                {/* Last In Day and Score */}
+                                <div className="flex items-center justify-between mt-4">
+                                    <div className="flex gap-2">
+                                        <div>{item.lastInDay}</div>
+                                        <div>In Last 30 Days</div>
+                                    </div>
+                                    <div className="flex items-center gap-4">
+                                        <div className="p-2 py-1.5 bg-[#5DB506] text-whiteColor">
+                                            {item.successScure}
+                                        </div>
+                                        <div>Our Score</div>
+                                    </div>
+                                </div>
+
+                                {/* Checkbox */}
+                                <div className="select-none flex items-center justify-center gap-2">
+                                    <input
+                                        type="checkbox"
+                                        id={`checkbox-${item.id}`}
+                                        className="accent-lightOrange text-whiteColor"
+                                    />
+                                    <label htmlFor={`checkbox-${item.id}`}>
+                                        {item.dadCard}
+                                    </label>
+                                </div>
+
+                                {/* Button */}
+                                <button className="block w-3/5 mx-auto rounded-full text-whiteColor hover:bg-lightOrange/90 whitespace-nowrap py-2 bg-lightOrange">
+                                    {item.button}
+                                </button>
                             </div>
-                        </div>
-
-                        {/* Checkbox */}
-                        <div className="select-none flex items-center justify-center gap-2">
-                            <input
-                                type="checkbox"
-                                id={`checkbox-${item.id}`}
-                                className="accent-lightOrange text-whiteColor"
-                            />
-                            <label htmlFor={`checkbox-${item.id}`}>
-                                {item.dadCard}
-                            </label>
-                        </div>
-
-                        {/* Button */}
-                        <button className="block w-3/5 mx-auto rounded-full text-whiteColor hover:bg-lightOrange/90 whitespace-nowrap py-2 bg-lightOrange">
-                            {item.button}
-                        </button>
-                    </div>
-                    </SwiperSlide>
-                ))}
+                        </SwiperSlide>
+                    ))}
                 </Swiper>
 
                 {/* Swiper Navigation Buttons */}
                 <button
-                    className={`swiper-button-next-list py-3 rounded-md text-white bg-lightOrange absolute right-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${
-                        isAtEnd ? "opacity-0 pointer-events-none" : ""
-                    }`}
+                    className={`swiper-button-next-list py-3 rounded-md text-white bg-lightOrange absolute right-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${isAtEnd ? "opacity-0 pointer-events-none" : ""
+                        }`}
                 >
                     <ChevronRight />
                 </button>
                 <button
-                    className={`swiper-button-prev-list py-3 rounded-md text-white bg-lightOrange absolute lg:left-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${
-                        isAtStart ? "opacity-0 pointer-events-none" : ""
-                    }`}
+                    className={`swiper-button-prev-list py-3 rounded-md text-white bg-lightOrange absolute lg:left-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${isAtStart ? "opacity-0 pointer-events-none" : ""
+                        }`}
                 >
                     <ChevronLeft />
                 </button>
