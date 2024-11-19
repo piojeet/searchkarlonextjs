@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chart.js": "^4.4.6",
     "gsap": "^3.12.5",
     "lucide-react": "^0.456.0",
     "marquee": "^0.2.1",
     "next": "15.0.3",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.5",
     "swiper": "^11.1.14",
