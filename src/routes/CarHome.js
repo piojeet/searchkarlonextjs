@@ -4,7 +4,6 @@
 // import BestCashback from "@/components/BestCashbackOffers/BestCashback";
 import BannerSwiper from "@/components/Bannners/BannerSwiper";
 import CarForTco from "@/components/CarForTco/CarForTco";
-import CarList from "@/components/CarListCategories/CarList";
 import CarValidation from "@/components/CarValidation/CarValidation";
 import Categories from "@/components/Categories/Categories";
 import Calculate from "@/components/EMICalculator/CarLoanAmountCalculator";
@@ -24,6 +23,7 @@ import LatestNews from "@/components/News/LatestNews";
 import PopularPriceList from "@/components/PopularPriceList/PopularPriceList";
 import SearchDealers from "@/components/SearchDealersbyCity&Brand/SearchDealers";
 import SelectbyPrice from "@/components/SelectPriceAndSelectFuel/SelectbyPrice";
+import CarList from "@/components/CarListCategories/CarList";
 
 export default function CarHome() {
   return (

@@ -33,7 +33,7 @@ export default function CarList() {
         { id: 10, name: "View All", dataTag: "tag10" },
     ];
 
-    const [activeUpperTag, setActiveUpperTag] = useState(""); // For upper buttons
+    const [activeUpperTag, setActiveUpperTag] = useState("tag1"); // For upper buttons
     const [activeLowerTag, setActiveLowerTag] = useState(""); // For lower buttons
 
     const handleUpperButtonClick = (tag) => {
