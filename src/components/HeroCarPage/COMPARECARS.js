@@ -23,7 +23,7 @@ export default function COMPARECARS() {
             <div className="h-full flex flex-col justify-between gap-2">
                 <div className="text-center text-base font-semibold">COMPARE CARS</div>
 
-                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                <div className="flex items-center gap-2 text-sm whitespace-nowrap">
                     <div className="text-sm">Car 1</div>
                     <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
                     {car1.map((car, i) => (
@@ -37,7 +37,7 @@ export default function COMPARECARS() {
                     ))}
                     </div>
                 </div>
-                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                <div className="flex items-center gap-2 text-sm whitespace-nowrap">
                     <div className="text-sm">Car 2</div>
                     <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
                     {car2.map((car, i) => (
@@ -51,7 +51,7 @@ export default function COMPARECARS() {
                     ))}
                     </div>
                 </div>
-                <div className="flex items-start gap-2 text-sm whitespace-nowrap">
+                <div className="flex items-center gap-2 text-sm whitespace-nowrap">
                     <div className="text-sm">Car 3</div>
                     <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
                     {car3.map((car, i) => (
