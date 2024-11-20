@@ -64,6 +64,12 @@ const LoanTimePeriod = ({
     setInputValue(inputValue); // Allow free text input temporarily
   };
 
+  const handleInputKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleInputBlur(); // Call the same function as onBlur
+    }
+  };
+
   const handleInputBlur = () => {
     const parsedValue = parseInt(inputValue, 10);
 
@@ -93,6 +99,7 @@ const LoanTimePeriod = ({
             type="number"
             value={inputValue}
             onChange={handleInputChange}
+            onKeyDown={handleInputKeyDown}
             onBlur={handleInputBlur}
             className="outline-none border-b-2 border-gray-400 bg-transparent w-10 text-center"
           />
