@@ -40,9 +40,18 @@ const InterestRateCalculator = ({
     document.addEventListener("mousemove", handleMove);
     document.addEventListener("mouseup", handleMouseUp);
 
+     // Add touch event listeners for mobile
+     document.addEventListener("touchmove", handleMove);
+     document.addEventListener("touchend", handleEnd);
+ 
+
     return () => {
       document.removeEventListener("mousemove", handleMove);
       document.removeEventListener("mouseup", handleMouseUp);
+
+      // Remove touch event listeners
+      document.removeEventListener("touchmove", handleMove);
+      document.removeEventListener("touchend", handleEnd);
     };
   }, [isDragging]);
 
