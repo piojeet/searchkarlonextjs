@@ -125,16 +125,17 @@ export default function CarList() {
                     }}
                     className="mySwiper">
                     {CarListCategroiesData.map((item) => (
-                        <SwiperSlide key={item.id}>
+                        <SwiperSlide key={item.id} data-tag="tag1" style={{
+                            display:
+                              (activeLowerTag === "tag1" || activeLowerTag === "") &&
+                              activeUpperTag === "tag1"
+                                ? "block"
+                                : "none",
+                          }}
+                          >
                             <div
-                                className="space-y-2 p-4 border-2 rounded-3xl" data-tag="tag1"
-                                style={{
-                                    display:
-                                      (activeLowerTag === "tag1" || activeLowerTag === "") &&
-                                      activeUpperTag === "tag1"
-                                        ? "block"
-                                        : "none",
-                                  }}
+                                className="space-y-2 p-4 border-2 rounded-3xl"
+                                
                             >
                                 {/* Car Image */}
                                 <div>
