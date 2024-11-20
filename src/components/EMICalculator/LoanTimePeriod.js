@@ -17,21 +17,25 @@ const LoanTimePeriod = ({
   const [isDragging, setIsDragging] = useState(false);
   const sliderRef = useRef(null);
 
-  // Calculate percentage based on mode
   const percentage = isYearMode
     ? ((value - minYear) / (maxYear - minYear)) * 100
     : ((value - minMonth) / (maxMonth - minMonth)) * 100;
 
+  const calculateNewValue = (clientX) => {
+    const rect = sliderRef.current.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const sliderPercentage = Math.min(Math.max(x / rect.width, 0), 1);
+
+    return isYearMode
+      ? Math.round((sliderPercentage * (maxYear - minYear) + minYear) / step) * step
+      : Math.round((sliderPercentage * (maxMonth - minMonth) + minMonth) / step) * step;
+  };
+
   const handleMove = (event) => {
     if (!isDragging) return;
 
-    const rect = sliderRef.current.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const percentage = Math.min(Math.max(x / rect.width, 0), 1);
-
-    const newValue = isYearMode
-      ? Math.round((percentage * (maxYear - minYear) + minYear) / step) * step
-      : Math.round((percentage * (maxMonth - minMonth) + minMonth) / step) * step;
+    const clientX = event.type === "mousemove" ? event.clientX : event.touches[0].clientX;
+    const newValue = calculateNewValue(clientX);
 
     setValue(newValue);
     setInputValue(newValue);
@@ -39,19 +43,22 @@ const LoanTimePeriod = ({
   };
 
   const handleMouseDown = () => setIsDragging(true);
-  const handleMouseUp = () => setIsDragging(false);
+  const handleTouchStart = () => setIsDragging(true);
+  const handleEnd = () => setIsDragging(false);
 
   useEffect(() => {
-    document.addEventListener("mousemove", handleMove);
-    document.addEventListener("mouseup", handleMouseUp);
+    const moveEvent = isDragging ? ["mousemove", "touchmove"] : [];
+    const endEvent = isDragging ? ["mouseup", "touchend"] : [];
+
+    moveEvent.forEach((event) => document.addEventListener(event, handleMove));
+    endEvent.forEach((event) => document.addEventListener(event, handleEnd));
 
     return () => {
-      document.removeEventListener("mousemove", handleMove);
-      document.removeEventListener("mouseup", handleMouseUp);
+      moveEvent.forEach((event) => document.removeEventListener(event, handleMove));
+      endEvent.forEach((event) => document.removeEventListener(event, handleEnd));
     };
-  }, [isDragging, isYearMode]);
+  }, [isDragging]);
 
-  // Handle manual input change
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
     setInputValue(inputValue); // Allow free text input temporarily
@@ -86,7 +93,7 @@ const LoanTimePeriod = ({
             type="number"
             value={inputValue}
             onChange={handleInputChange}
-            onBlur={handleInputBlur} // Validate on blur
+            onBlur={handleInputBlur}
             className="outline-none border-b-2 border-gray-400 bg-transparent w-10 text-center"
           />
           <div className="flex items-center gap-1 border-2 py-1 px-2 rounded-md">
@@ -123,37 +130,27 @@ const LoanTimePeriod = ({
       </div>
 
       <div className="relative">
-        {/* Slider Track */}
         <div
           ref={sliderRef}
           className="w-full h-1.5 bg-gray-400 rounded-full cursor-pointer"
           onClick={(e) => {
-            const rect = sliderRef.current.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const percentage = Math.min(Math.max(x / rect.width, 0), 1);
-
-            const newValue = isYearMode
-              ? Math.round((percentage * (maxYear - minYear) + minYear) / step) * step
-              : Math.round((percentage * (maxMonth - minMonth) + minMonth) / step) * step;
-
+            const newValue = calculateNewValue(e.clientX);
             setValue(newValue);
             setInputValue(newValue);
             onChange(newValue);
           }}
         >
-          {/* Filled track */}
           <div
             className="absolute h-1.5 bg-lightOrange rounded-full transition-all duration-150"
             style={{ width: `${percentage}%` }}
           />
-
-          {/* Slider Thumb */}
           <div
             className={`absolute w-5 h-5 bg-white border-2 border-lightOrange rounded-full -mt-2 transform -translate-x-1/2 cursor-grab transition-shadow duration-150 hover:shadow-lg ${
               isDragging ? "cursor-grabbing shadow-lg scale-110" : ""
             }`}
             style={{ left: `${percentage}%` }}
             onMouseDown={handleMouseDown}
+            onTouchStart={handleTouchStart}
           />
         </div>
       </div>
