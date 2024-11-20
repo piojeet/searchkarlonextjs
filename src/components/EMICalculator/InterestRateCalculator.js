@@ -19,7 +19,10 @@ const InterestRateCalculator = ({
     if (!isDragging) return;
 
     const rect = sliderRef.current.getBoundingClientRect();
-    const x = event.clientX - rect.left;
+    // Extract the X-coordinate for mouse or touch input
+    const clientX =
+      event.touches && event.touches[0] ? event.touches[0].clientX : event.clientX;
+    const x = clientX - rect.left;
     const percentage = Math.min(Math.max(x / rect.width, 0), 1);
     const newValue = Math.round((percentage * (max - min) + min) / step) * step;
 
@@ -28,26 +31,25 @@ const InterestRateCalculator = ({
     onChange(formattedValue);
   };
 
-  const handleMouseDown = () => {
+  const handleStart = () => {
     setIsDragging(true);
   };
 
-  const handleMouseUp = () => {
+  const handleEnd = () => {
     setIsDragging(false);
   };
 
   useEffect(() => {
     document.addEventListener("mousemove", handleMove);
-    document.addEventListener("mouseup", handleMouseUp);
+    document.addEventListener("mouseup", handleEnd);
 
-     // Add touch event listeners for mobile
-     document.addEventListener("touchmove", handleMove);
-     document.addEventListener("touchend", handleEnd);
- 
+    // Add touch event listeners for mobile
+    document.addEventListener("touchmove", handleMove);
+    document.addEventListener("touchend", handleEnd);
 
     return () => {
       document.removeEventListener("mousemove", handleMove);
-      document.removeEventListener("mouseup", handleMouseUp);
+      document.removeEventListener("mouseup", handleEnd);
 
       // Remove touch event listeners
       document.removeEventListener("touchmove", handleMove);
@@ -90,7 +92,8 @@ const InterestRateCalculator = ({
               isDragging ? "cursor-grabbing shadow-lg scale-110" : ""
             }`}
             style={{ left: `${percentage}%` }}
-            onMouseDown={handleMouseDown}
+            onMouseDown={handleStart}
+            onTouchStart={handleStart} // Start dragging on touch
           />
         </div>
       </div>
