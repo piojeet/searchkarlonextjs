@@ -7,19 +7,22 @@ const LoanTimePeriod = ({
   maxMonth = 12,
   minYear = 1,
   maxYear = 10,
-  defaultValue = 6,
+  defaultMonthValue = 6,
+  defaultYearValue = 2,
   step = 1,
   onChange = () => {},
 }) => {
-  const [value, setValue] = useState(defaultValue);
-  const [inputValue, setInputValue] = useState(defaultValue); // Temporary input value
+  const [yearValue, setYearValue] = useState(defaultYearValue); // Year-specific value
+  const [monthValue, setMonthValue] = useState(defaultMonthValue); // Month-specific value
+  const [inputValue, setInputValue] = useState(defaultYearValue); // Displayed input value
   const [isYearMode, setIsYearMode] = useState(true); // Toggle between year and month
   const [isDragging, setIsDragging] = useState(false);
   const sliderRef = useRef(null);
 
+  // Calculate percentage for the slider
   const percentage = isYearMode
-    ? ((value - minYear) / (maxYear - minYear)) * 100
-    : ((value - minMonth) / (maxMonth - minMonth)) * 100;
+    ? ((yearValue - minYear) / (maxYear - minYear)) * 100
+    : ((monthValue - minMonth) / (maxMonth - minMonth)) * 100;
 
   const calculateNewValue = (clientX) => {
     const rect = sliderRef.current.getBoundingClientRect();
@@ -37,9 +40,15 @@ const LoanTimePeriod = ({
     const clientX = event.type === "mousemove" ? event.clientX : event.touches[0].clientX;
     const newValue = calculateNewValue(clientX);
 
-    setValue(newValue);
-    setInputValue(newValue);
-    onChange(newValue);
+    if (isYearMode) {
+      setYearValue(newValue);
+      setInputValue(newValue);
+      onChange(newValue);
+    } else {
+      setMonthValue(newValue);
+      setInputValue(newValue);
+      onChange(newValue);
+    }
   };
 
   const handleMouseDown = () => setIsDragging(true);
@@ -59,6 +68,11 @@ const LoanTimePeriod = ({
     };
   }, [isDragging]);
 
+  // Switch inputValue based on mode
+  useEffect(() => {
+    setInputValue(isYearMode ? yearValue : monthValue);
+  }, [isYearMode, yearValue, monthValue]);
+
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
     setInputValue(inputValue); // Allow free text input temporarily
@@ -66,7 +80,8 @@ const LoanTimePeriod = ({
 
   const handleInputKeyDown = (e) => {
     if (e.key === "Enter") {
-      handleInputBlur(); // Call the same function as onBlur
+      e.preventDefault();
+      handleInputBlur();
     }
   };
 
@@ -75,17 +90,17 @@ const LoanTimePeriod = ({
 
     if (isYearMode) {
       if (parsedValue >= minYear && parsedValue <= maxYear) {
-        setValue(parsedValue);
+        setYearValue(parsedValue);
         onChange(parsedValue);
       } else {
-        setInputValue(value); // Revert to valid value
+        setInputValue(yearValue); // Revert to valid year value
       }
     } else {
       if (parsedValue >= minMonth && parsedValue <= maxMonth) {
-        setValue(parsedValue);
+        setMonthValue(parsedValue);
         onChange(parsedValue);
       } else {
-        setInputValue(value); // Revert to valid value
+        setInputValue(monthValue); // Revert to valid month value
       }
     }
   };
@@ -142,9 +157,15 @@ const LoanTimePeriod = ({
           className="w-full h-1.5 bg-gray-400 rounded-full cursor-pointer"
           onClick={(e) => {
             const newValue = calculateNewValue(e.clientX);
-            setValue(newValue);
-            setInputValue(newValue);
-            onChange(newValue);
+            if (isYearMode) {
+              setYearValue(newValue);
+              setInputValue(newValue);
+              onChange(newValue);
+            } else {
+              setMonthValue(newValue);
+              setInputValue(newValue);
+              onChange(newValue);
+            }
           }}
         >
           <div
