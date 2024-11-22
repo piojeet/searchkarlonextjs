@@ -6,6 +6,7 @@ import LoanTimePeriod from "./LoanTimePeriod";
 import Dashboard from "./EMIGraph";
 import EMICalculate from "./EMICalculate";
 import SchedulerEMIDate from "./SchedulerEMIDate";
+import CarEMIForm from "./CarEMIFor";
 
 const CarLoanAmountCalculator = ({
   min = 100000,
@@ -61,6 +62,7 @@ const CarLoanAmountCalculator = ({
   }, [isDragging]);
 
   return (
+    <>
     <div className="w-full lg:p-6 p-4 grid lg:grid-cols-3 gap-4">
       <div className="border-2 p-4 rounded-md">
         <EMICalculate />
@@ -113,6 +115,8 @@ const CarLoanAmountCalculator = ({
       <Dashboard />
       <SchedulerEMIDate />
     </div>
+    <CarEMIForm />
+    </>
   );
 };
 
