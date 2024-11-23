@@ -86,7 +86,7 @@ const Dashboard = () => {
     <div className="p-4 border-2 rounded-md">
       <div className="">
         {/* Pie Chart */}
-        <div className="p-4 bg-white rounded-lg max-w-80 w-full mx-auto">
+        <div className="p-4 bg-white rounded-lg md:max-w-80 max-w-64 w-full mx-auto">
           <PieChart />
         </div>
 
