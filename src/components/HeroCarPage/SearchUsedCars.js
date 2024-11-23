@@ -52,7 +52,7 @@ export default function SearchUsedCars() {
   return (
     <div className="bg-whiteColor p-4 rounded-md">
         <div className="relative">
-            <div className="flex items-center gap-2 text-sm mb-4 md:flex-row flex-col">
+            <div className="flex items-center justify-center gap-2 text-sm mb-4 md:flex-row flex-col">
                 <div className="font-semibold">Price Range</div>
 
                 <div className="text-sm flex items-center gap-2">
@@ -69,7 +69,7 @@ export default function SearchUsedCars() {
             </div>
 
             {/* Custom Dropdown */}
-            <div className="relative w-fit text-sm ml-[6vw] mb-4" ref={dropdownRef}>
+            <div className="relative w-fit text-sm mx-auto mb-4" ref={dropdownRef}>
                 <button
                     className="flex items-center justify-between w-full px-4 py-2 border rounded-md bg-white cursor-pointer gap-2"
                     onClick={toggleDropdown}
@@ -98,7 +98,7 @@ export default function SearchUsedCars() {
                 )}
             </div>
 
-            <button className="text-sm outline-none border-none bg-lightOrange hover:bg-lightOrange/90 text-whiteColor py-2 px-4 rounded-md ml-[6vw] block w-fit">Get on Road Price</button>
+            <button className="text-sm outline-none border-none bg-lightOrange hover:bg-lightOrange/90 text-whiteColor py-2 px-4 rounded-md mx-auto block w-fit">Get on Road Price</button>
 
             {/* <Image src={Car} alt="car" className="absolute right-0 lg:top-1/2 bottom-0 lg:-translate-y-1/2 lg:w-[15vw] w-44 md:block hidden" /> */}
         </div>

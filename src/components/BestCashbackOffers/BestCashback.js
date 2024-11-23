@@ -1,3 +1,5 @@
+"use client"
+
 import { OffersCashbackData } from "@/db/db";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
