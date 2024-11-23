@@ -24,6 +24,7 @@ import PopularPriceList from "@/components/PopularPriceList/PopularPriceList";
 import SearchDealers from "@/components/SearchDealersbyCity&Brand/SearchDealers";
 import SelectbyPrice from "@/components/SelectPriceAndSelectFuel/SelectbyPrice";
 import CarList from "@/components/CarListCategories/CarList";
+import FreeCarListing from "@/components/HeroCarPage/FreeCarListing";
 
 export default function CarHome() {
   return (
@@ -40,7 +41,9 @@ export default function CarHome() {
         <CarList />
         <ComparePriceandFeatures />
         <QuickLook />
+        <div className="hidden lg:block">
         <SelectbyPrice />
+        </div>
         <FindCarbyBrand />
         <SearchDealers />
         <FindFuelEfficiency />
@@ -50,6 +53,9 @@ export default function CarHome() {
         <Insight />
         <LatestNews />
         <AskExpertis />
+        <div className="lg:hidden">
+        <FreeCarListing />
+        </div>
         <PopularPriceList />
         <Footer />
     </div>

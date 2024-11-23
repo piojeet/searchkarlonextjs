@@ -13,8 +13,8 @@ export default function SelectbyPrice() {
     ];
 
     return (
-        <div className="grid lg:grid-cols-2 lg:p-6 p-4 gap-4">
-            <div className="">
+        <div className="grid lg:grid-cols-2 lg:p-6 lg:gap-4 gap-2">
+            <div className="bg-whiteColor p-4 lg:p-0 rounded-md lg:rounded-none">
             <div className="lg:text-xl font-semibold text-lg">Select by Price</div>
             <div className="grid xs:grid-cols-2 md:gap-4 gap-2 border-2 md:p-4 p-2 rounded-md mt-4">
             {priceData.map((item, index) => (

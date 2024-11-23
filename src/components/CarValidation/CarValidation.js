@@ -1,4 +1,4 @@
-import CarList from "./CarList";
+// import CarList from "./CarList";
 
 export default function CarValidation() {
     return (
@@ -114,7 +114,7 @@ export default function CarValidation() {
                 </form>
             </div>
 
-            <CarList />
+            {/* <CarList /> */}
         </div>
     )
 }

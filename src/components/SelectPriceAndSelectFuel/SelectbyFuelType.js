@@ -16,7 +16,7 @@ export default function SelectbyFuelType() {
     ]
 
     return (
-        <div>
+        <div className="lg:p-0 p-4 bg-whiteColor rounded-md lg:rounded-none">
             <div className="lg:text-xl font-semibold text-lg">Select by Fuel Type</div>
             <div className="mt-4 border-2 rounded-md md:p-4 p-2 grid grid-cols-2 md:gap-4 gap-2">
                 {data.map((item, i) => (

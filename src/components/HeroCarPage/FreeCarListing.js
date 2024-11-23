@@ -6,7 +6,7 @@ import redcar from "../../../public/redcar.png";
 
 export default function FreeCarListing() {
     return (
-        <div className="bg-whiteColor p-4 rounded-md">
+        <div className="bg-whiteColor p-4 rounded-md h-full">
             <div className="h-full flex flex-col justify-between">
                 <div className="text-base font-semibold flex gap-2 items-center justify-center">
                     <Image src={Subtract} alt="Subtract" />

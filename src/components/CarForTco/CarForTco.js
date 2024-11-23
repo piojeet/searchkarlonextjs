@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Car from "../../../public/car.png"
+import COMPARECARS from "../HeroCarPage/COMPARECARS";
 
 export default function CarForTco() {
 
@@ -38,7 +39,7 @@ export default function CarForTco() {
                         </div>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 mt-4">
+                    <div className="grid lg:grid-cols-3 gap-4 mt-4">
                         {data.map((selectGroup, index) => (
                             <div key={index} className="text-sm border-2 px-4 py-2 space-y-2 rounded-md">
                                 <div className="size-16 mx-auto">
@@ -65,6 +66,10 @@ export default function CarForTco() {
                     </div>
 
                 </form>
+            </div>
+
+            <div className="lg:hidden border-2 rounded-md mt-4">
+                <COMPARECARS />
             </div>
         </div>
     )
