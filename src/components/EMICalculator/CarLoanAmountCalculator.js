@@ -6,7 +6,7 @@ import LoanTimePeriod from "./LoanTimePeriod";
 import Dashboard from "./EMIGraph";
 import EMICalculate from "./EMICalculate";
 import SchedulerEMIDate from "./SchedulerEMIDate";
-import CarEMIForm from "./CarEMIFor";
+import CarEMIForm from "./CarEMIForm";
 
 const CarLoanAmountCalculator = ({
   min = 100000,

@@ -25,9 +25,9 @@ export default function COMPARECARS() {
 
                 <div className="flex items-center gap-2 text-sm whitespace-nowrap">
                     <div className="text-sm">Car 1</div>
-                    <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
+                    <div className="flex items-center gap-2 md:text-sm text-xs w-full">
                     {car1.map((car, i) => (
-                        <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md">
+                        <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md w-full">
                             {car.map((value, subIndex) => (
                                 <option key={subIndex} value={value}>
                                     {value}
@@ -39,9 +39,9 @@ export default function COMPARECARS() {
                 </div>
                 <div className="flex items-center gap-2 text-sm whitespace-nowrap">
                     <div className="text-sm">Car 2</div>
-                    <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
+                    <div className="flex items-center gap-2 md:text-sm text-xs w-full">
                     {car2.map((car, i) => (
-                        <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md">
+                        <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md w-full">
                             {car.map((value, subIndex) => (
                                 <option key={subIndex} value={value}>
                                     {value}
@@ -53,9 +53,9 @@ export default function COMPARECARS() {
                 </div>
                 <div className="flex items-center gap-2 text-sm whitespace-nowrap">
                     <div className="text-sm">Car 3</div>
-                    <div className="flex items-center gap-2 md:text-sm text-xs flex-wrap">
+                    <div className="flex items-center gap-2 md:text-sm text-xs w-full">
                     {car3.map((car, i) => (
-                        <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md">
+                        <select name="" id="" key={i} className="py-1 px-1 border-2 rounded-md w-full">
                             {car.map((value, subIndex) => (
                                 <option key={subIndex} value={value}>
                                     {value}

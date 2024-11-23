@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import MapIcon from "../../../public/Map Point Wave.png";
-import Car from "../../../public/carquick.png";
+// import Car from "../../../public/carquick.png";
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import SearchUsedCars from "./SearchUsedCars";
@@ -110,7 +110,7 @@ export default function GetOnRoadPrice() {
 
             <button className="text-sm outline-none border-none bg-lightOrange hover:bg-lightOrange/90 text-whiteColor py-2 px-4 rounded-md ml-[6vw] block w-fit">Get on Road Price</button>
 
-            <Image src={Car} alt="car" className="absolute right-0 lg:top-1/2 bottom-0 lg:-translate-y-1/2 lg:w-[15vw] w-44 md:block hidden" />
+            {/* <Image src={Car} alt="car" className="absolute right-0 lg:top-1/2 bottom-0 lg:-translate-y-1/2 lg:w-[15vw] w-44 md:block hidden" /> */}
         </div>
 
         <SearchUsedCars />

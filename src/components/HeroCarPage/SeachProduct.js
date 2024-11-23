@@ -132,7 +132,7 @@ export default function SearchProduct() {
 			</div>
 			{/* Price Range */}
 			<div className="flex flex-col items-center justify-center gap-4">
-				<div className="flex w-full flex-col lg:flex-row">
+				<div className="flex w-full flex-col lg:flex-row gap-2">
 					<h1 className="text-nowrap text-center font-semibold lg:mb-auto lg:text-lg">
 						Price Range
 					</h1>
@@ -150,7 +150,7 @@ export default function SearchProduct() {
 									Rs
 								</p>
 								<input
-									className="h-8 lg:w-20 w-16 border-none shadow-none focus-visible:ring-0"
+									className="h-8 lg:w-20 w-16 border-none shadow-none focus-visible:ring-0 text-center"
 									type="text"
 									name="min"
 									placeholder="Min"
@@ -164,7 +164,7 @@ export default function SearchProduct() {
 									Rs
 								</p>
 								<input
-									className="h-8 lg:w-20 w-16 border-none shadow-none focus-visible:ring-0"
+									className="h-8 lg:w-20 w-16 border-none shadow-none focus-visible:ring-0 text-center"
 									type="text"
 									name="max"
 									placeholder="Max"
