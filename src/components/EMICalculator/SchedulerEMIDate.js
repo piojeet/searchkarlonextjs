@@ -32,7 +32,7 @@ export default function SchedulerEMIDate() {
     <div className="lg:border-2 rounded-md lg:p-4">
       <div className="border-2 rounded-md">
         {/* Table Header */}
-        <div className="grid grid-cols-4 text-right text-sm font-semibold bg-lightOrange text-whiteColor">
+        <div className="grid grid-cols-4 text-right text-sm font-semibold bg-lightOrange text-whiteColor rounded-t-md">
           <div className="border-r-2 px-1 py-1">Year</div>
           <div className="border-r-2 px-1 py-1">Principle</div>
           <div className="border-r-2 px-1 py-1">Interest</div>
