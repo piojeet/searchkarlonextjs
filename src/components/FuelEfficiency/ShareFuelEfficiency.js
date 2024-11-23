@@ -15,8 +15,8 @@ export default function ShareFuelEfficiency() {
             <form action="#">
             <div className="p-4 border-2 rounded-md">
                 <div className="lg:text-xl text-lg">Find Fuel Efficiency of Car in India</div>
-                <div className="md:flex items-end justify-between text-sm mt-4 gap-4 space-y-4 md:space-y-0">
-                    <div className="grid md:grid-cols-2 gap-y-2 gap-x-4">
+                <div className="sm:flex items-end justify-between text-sm mt-4 gap-4 space-y-4 sm:space-y-0">
+                    <div className="grid sm:grid-cols-2 gap-y-2 gap-x-4">
                         {data.map((item, index) => (
                             <select name="" id="" key={index} className="py-2 border-2 px-2 outline-none rounded-md">
                                 {item.map((value, subIndex) => (

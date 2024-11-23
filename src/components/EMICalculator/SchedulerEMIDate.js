@@ -29,7 +29,7 @@ export default function SchedulerEMIDate() {
   };
 
   return (
-    <div className="border-2 rounded-md p-4">
+    <div className="lg:border-2 rounded-md lg:p-4">
       <div className="border-2 rounded-md">
         {/* Table Header */}
         <div className="grid grid-cols-4 text-right text-sm font-semibold bg-lightOrange text-whiteColor">

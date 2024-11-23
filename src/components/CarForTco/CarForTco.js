@@ -42,6 +42,7 @@ export default function CarForTco() {
                                 <div className="size-16 mx-auto">
                                     <Image src={Car} alt="car" className="h-full w-full object-contain" />
                                 </div>
+                                <div className="flex gap-2">
                                 {selectGroup.map((options, idx) => (
                                     <select
                                         key={idx}
@@ -56,6 +57,7 @@ export default function CarForTco() {
                                         ))}
                                     </select>
                                 ))}
+                                </div>
                             </div>
                         ))}
                     </div>
