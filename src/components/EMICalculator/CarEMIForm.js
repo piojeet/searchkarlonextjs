@@ -52,7 +52,7 @@ export default function CarEMIForm() {
     };
 
     return (
-        <div className="lg:p-6 p-4 space-y-4 grid grid-cols-3">
+        <div className="lg:p-6 p-4 space-y-4 grid lg:grid-cols-3">
             <div className="border-2 rounded-md p-4 space-y-4">
                 <div className="text-lg text-center">Car EMI</div>
                 <form className="text-sm space-y-4" onSubmit={handleSubmit}>
