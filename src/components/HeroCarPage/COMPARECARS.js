@@ -19,7 +19,7 @@ export default function COMPARECARS() {
     ];
 
     return (
-        <div className="p-4 bg-whiteColor rounded-md">
+        <div className="p-4 bg-whiteColor rounded-md h-full">
             <div className="h-full flex flex-col justify-between gap-2">
                 <div className="text-center text-base font-semibold">COMPARE CARS</div>
 

@@ -17,15 +17,17 @@ export function AuthProvider({ children }) {
         setOpen(false);
     };
 
-
+    const [priceFuelActiveTab, setPriceFuelActiveTab] = useState('select-price');
 
     return (
         <AuthContext.Provider 
         value={{ 
             open, 
-            setOpen, 
+            setOpen,
             handleCloseMenu, 
-            handleOpenMenu 
+            handleOpenMenu,
+            priceFuelActiveTab,
+            setPriceFuelActiveTab
             }}>
             {children}
         </AuthContext.Provider>

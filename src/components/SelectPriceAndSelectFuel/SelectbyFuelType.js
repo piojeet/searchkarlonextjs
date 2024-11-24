@@ -5,6 +5,7 @@ import Gas from "../../../public/Gas Station.svg"
 import Diesel from "../../../public/desel.svg"
 import CNG from "../../../public/cng.svg"
 import LPG from "../../../public/lpg.svg"
+import { useAuthContext } from "@/context/AuthContext"
 
 export default function SelectbyFuelType() {
 
@@ -13,10 +14,14 @@ export default function SelectbyFuelType() {
         { name: "Diesel", img: Diesel },
         { name: "CNG", img: CNG },
         { name: "LPC", img: LPG },
-    ]
+    ];
+
+    const { priceFuelActiveTab } = useAuthContext();
 
     return (
-        <div className="lg:p-0 p-4 bg-whiteColor rounded-md lg:rounded-none">
+        <>
+       
+            <div className="lg:p-0 p-4 bg-whiteColor rounded-md lg:rounded-none">
             <div className="lg:text-xl font-semibold text-lg">Select by Fuel Type</div>
             <div className="mt-4 border-2 rounded-md md:p-4 p-2 grid grid-cols-2 md:gap-4 gap-2">
                 {data.map((item, i) => (
@@ -27,5 +32,6 @@ export default function SelectbyFuelType() {
                 ))}
             </div>
         </div>
+        </>
     )
 }
