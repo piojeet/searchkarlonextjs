@@ -7,6 +7,9 @@ import Dashboard from "./EMIGraph";
 import EMICalculate from "./EMICalculate";
 import SchedulerEMIDate from "./SchedulerEMIDate";
 import CarEMIForm from "./CarEMIForm";
+import EMITabBtns from "./EMITabBtns";
+import { useAuthContext } from "@/context/AuthContext";
+import CarForTco from "../CarForTco/CarForTco";
 
 const CarLoanAmountCalculator = ({
   min = 100000,
@@ -61,9 +64,13 @@ const CarLoanAmountCalculator = ({
     };
   }, [isDragging]);
 
+  const {tcoCalculatorAffordabilityActiveTab} = useAuthContext();
+
   return (
     <>
-    <div className="w-full lg:p-6 p-4 grid lg:grid-cols-3 gap-4">
+    <EMITabBtns />
+    {tcoCalculatorAffordabilityActiveTab === "emi-calculator" && (
+      <div className="w-full lg:p-6 p-4 grid lg:grid-cols-3 gap-4">
       <div className="border-2 p-4 rounded-md">
         <EMICalculate />
         <div className="text-sm flex items-center justify-between pb-4">
@@ -103,7 +110,7 @@ const CarLoanAmountCalculator = ({
             />
           </div>
         </div>
-
+  
         <div className="text-sm flex items-center justify-between pt-2">
           <div>Min: 1,00,000</div>
           <div>Max: 35,00,000</div>
@@ -111,11 +118,18 @@ const CarLoanAmountCalculator = ({
         <InterestRateCalculator />
         <LoanTimePeriod />
       </div>
-
+  
       <Dashboard />
       <SchedulerEMIDate />
     </div>
-    <CarEMIForm />
+    )}
+    {tcoCalculatorAffordabilityActiveTab === "card-affordability" && (
+      <CarEMIForm />
+    )}
+
+    {tcoCalculatorAffordabilityActiveTab === 'car-tco' && (
+      <CarForTco />
+    )}
     </>
   );
 };

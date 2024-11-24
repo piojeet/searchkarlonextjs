@@ -47,7 +47,9 @@ export default function CarHome() {
         <FindCarbyBrand />
         <SearchDealers />
         <FindFuelEfficiency />
+        <div className="lg:block hidden">
         <CarForTco />
+        </div>
         <GenralTools />
         <CarValidation />
         <Insight />

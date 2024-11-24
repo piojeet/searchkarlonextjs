@@ -54,7 +54,7 @@ export default function CarEMIForm() {
     return (
         <div className="lg:p-6 p-4 space-y-4 grid lg:grid-cols-3">
             <div className="border-2 rounded-md p-4 space-y-4">
-                <div className="text-lg text-center">Car EMI</div>
+                <div className="text-lg text-center">Car Affordability Calculator</div>
                 <form className="text-sm space-y-4" onSubmit={handleSubmit}>
                     <div className="space-y-2">
                         <div>Maximum Monthly Car EMI (₹)</div>

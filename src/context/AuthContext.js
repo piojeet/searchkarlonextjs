@@ -19,6 +19,9 @@ export function AuthProvider({ children }) {
 
     const [priceFuelActiveTab, setPriceFuelActiveTab] = useState('select-price');
 
+    
+    const [tcoCalculatorAffordabilityActiveTab, setTcoCalculatorAffordabilityActiveTab] = useState('emi-calculator');
+
     return (
         <AuthContext.Provider 
         value={{ 
@@ -27,7 +30,9 @@ export function AuthProvider({ children }) {
             handleCloseMenu, 
             handleOpenMenu,
             priceFuelActiveTab,
-            setPriceFuelActiveTab
+            setPriceFuelActiveTab,
+            tcoCalculatorAffordabilityActiveTab,
+            setTcoCalculatorAffordabilityActiveTab,
             }}>
             {children}
         </AuthContext.Provider>
