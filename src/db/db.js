@@ -1154,4 +1154,528 @@ export const CarListCategroiesData = [
 		carImg: redcar
 	},
 	
-]
+];
+
+export const DimensionAndWeightData = [
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        dimensions: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+];
+
+
+export const EngineData = [
+    {
+        engine: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        engine: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        engine: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        engine: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        engine: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        engine: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+];
+
+
+export const TransmissionData = [
+    {
+        transmission: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        transmission: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+];
+
+
+export const WheelTyreData = [
+    {
+        wheelTyre: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        wheelTyre: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        wheelTyre: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        wheelTyre: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+];
+
+
+export const BrakeData = [
+    {
+        brake: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        brake: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+
+];
+
+
+export const SuspensionData = [
+    {
+        suspension: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        suspension: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+
+];
+
+
+export const FuelEfficiencyData = [
+    {
+        fuelEfficiency: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        fuelEfficiency: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        fuelEfficiency: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        fuelEfficiency: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+
+];
+
+
+export const SteeringData = [
+    {
+        steering: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        steering: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        steering: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+];
+
+
+export const CapacityData = [
+    {
+        capacity: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+    {
+        capacity: [
+            "Overall Length",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+            "4456mm",
+            "3995mm",
+        ],
+    },
+];
+
+
+
+export const cityData = [
+	{
+		city: [
+			"Bangalore",
+		"Mumbai",
+		"Chennai",
+		"Delhi",
+		"Kolkata",
+		"Hyderabad",
+		"Pune",
+		"Noida",
+		"Jaipur",
+		"Lucknow",
+		"Ahmedabad",
+		"Gurugram",
+		"Surat",
+		"Vadodara",
+		"Rajkot",
+		"Bhopal",
+		"Indore",
+		"Nagpur",
+		"Visakhapatnam",
+		"Vijayawada",
+		"Patna",
+		"Agra",
+		"Ludhiana",
+		"Faridabad",
+		"Meerut",
+		"Amritsar",
+		"Srinagar",
+		"Guwahati",
+		"Bhubaneswar",
+		"Chandigarh"
+		]
+	}
+];
+
+export const pinCodeData = [
+		{
+			pincode: [
+				"123456",
+				"123457",
+				"123458",
+				"123459",
+				"123460",
+				"123461",
+				"123462",
+				"123463",
+				"123464",
+				"123465",
+				"123466",
+				"123467",
+				"123468",
+				"123469",
+				"123470",
+				"123471",
+				"123472",
+				"123473",
+				"123474",
+				"123475",
+				"123476",
+				"123477"
+				]
+		}
+];

@@ -1,8 +1,9 @@
+import CarHome from "@/routes/CarHome";
 
 export default function Car() {
   return (
     <div>
-      hi from car
+      <CarHome />
     </div>
   );
 }

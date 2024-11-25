@@ -2,6 +2,10 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import { MainProvider } from "@/context/MainContext";
+import NavTop from "@/components/Navbar/NavbarTop";
+import NavMiddle from "@/components/Navbar/NavMiddle";
+import NavBottom from "@/components/Navbar/NavBottom";
+import Footer from "@/components/Footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +31,11 @@ export default function RootLayout({ children }) {
       >
         <AuthProvider>
           <MainProvider>
+            <NavTop />
+            <NavMiddle />
+            <NavBottom />
             {children}
+            <Footer />
           </MainProvider>
         </AuthProvider>
       </body>

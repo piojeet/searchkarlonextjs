@@ -10,15 +10,15 @@ import Calculate from "@/components/EMICalculator/CarLoanAmountCalculator";
 import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
 import AskExpertis from "@/components/ExpertisQ&A/AskExpertis";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
-import Footer from "@/components/Footer/Footer";
+// import Footer from "@/components/Footer/Footer";
 import QuickLook from "@/components/ForYouQuickLook/QuickLook";
 import FindFuelEfficiency from "@/components/FuelEfficiency/FindFuelEfficiency";
 import GenralTools from "@/components/GenralTools/GenralTools";
 import CarPageHero from "@/components/HeroCarPage/CarPageHero";
 import Insight from "@/components/Insight/Insight";
-import NavTop from "@/components/Navbar/NavbarTop";
-import NavBottom from "@/components/Navbar/NavBottom";
-import NavMiddle from "@/components/Navbar/NavMiddle";
+// import NavTop from "@/components/Navbar/NavbarTop";
+// import NavBottom from "@/components/Navbar/NavBottom";
+// import NavMiddle from "@/components/Navbar/NavMiddle";
 import LatestNews from "@/components/News/LatestNews";
 import PopularPriceList from "@/components/PopularPriceList/PopularPriceList";
 import SearchDealers from "@/components/SearchDealersbyCity&Brand/SearchDealers";
@@ -29,9 +29,9 @@ import FreeCarListing from "@/components/HeroCarPage/FreeCarListing";
 export default function CarHome() {
   return (
     <div>
-        <NavTop />
+        {/* <NavTop />
         <NavMiddle />
-        <NavBottom />
+        <NavBottom /> */}
         {/* <BestCashback /> */}
         {/* <BestAppliancesList /> */}
         <CarPageHero />
@@ -59,7 +59,7 @@ export default function CarHome() {
         <FreeCarListing />
         </div>
         <PopularPriceList />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

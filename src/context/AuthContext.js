@@ -21,6 +21,7 @@ export function AuthProvider({ children }) {
 
     
     const [tcoCalculatorAffordabilityActiveTab, setTcoCalculatorAffordabilityActiveTab] = useState('emi-calculator');
+    
 
     return (
         <AuthContext.Provider 
