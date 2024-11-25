@@ -1679,3 +1679,209 @@ export const pinCodeData = [
 				]
 		}
 ];
+
+
+export const safetyData = [
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "Check", "X", "Check", "Check"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+	{
+		title: "Overall Length",
+		icons: ["X", "Check", "Check", "Check", "Check", "Check"],
+	  },
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "Check", "Check", "Check"],
+	  },
+	{
+		title: "Overall Length",
+		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "Check", "Check", "Check"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
+	  },
+  ];
+
+
+export const ComfortAndConvenienceData = [
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "Check", "X", "Check", "Check"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+	{
+		title: "Overall Length",
+		icons: ["X", "Check", "Check", "Check", "Check", "Check"],
+	  },
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "Check", "Check", "Check"],
+	  },
+	{
+		title: "Overall Length",
+		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "Check", "Check", "Check"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	  },
+	  {
+		title: "Overall Length",
+		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
+	  },
+  ];
+
+
+export const LightsData = [
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "Check", "X", "Check", "Check"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+
+  ];
+
+
+export const InstrumentationData = [
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "Check", "X", "Check", "Check"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "Check", "X", "Check", "Check"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+    {
+      title: "Overall Length",
+      icons: ["X", "X", "X", "X", "X", "X"],
+    },
+
+  ];

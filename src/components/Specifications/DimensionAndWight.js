@@ -19,6 +19,7 @@ export default function DimensionAndWeight() {
     return (
         <>
             <div>
+                <div className="py-2 bg-buttonColor text-whiteColor my-4 px-4 rounded-md">Specifications </div>
                 <div>
                     {headData.map((row, rowIndex) => (
                         <div key={rowIndex} className="flex items-center justify-between py-3 bg-gray-400 text-whiteColor px-4 rounded-md">
