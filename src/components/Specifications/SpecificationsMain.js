@@ -10,7 +10,8 @@ import WheelTyre from "./Wheel&Tyre";
 
 export default function SpecificationsMain() {
     return (
-        <div className="lg:p-6 p-4">
+        <div className="lg:p-6 p-4 overflow-hidden">
+            <div>
             <DimensionAndWeight />
             <Engine />
             <Transmission />
@@ -20,6 +21,7 @@ export default function SpecificationsMain() {
             <FuelEfficiency />
             <Steering />
             <Capacity />
+            </div>
         </div>
     )
 }

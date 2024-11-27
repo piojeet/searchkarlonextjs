@@ -446,10 +446,12 @@ export const OffersCashbackData = [
 		alt: "oneplus",
 		cashback: "5% Cashback",
 	},
-	{ id: 5, 
-		img: Flipkart, 
-		alt: "ajio", 
-		cashback: "3% Cashback" },
+	{
+		id: 5,
+		img: Flipkart,
+		alt: "ajio",
+		cashback: "3% Cashback"
+	},
 	{
 		id: 6,
 		img: Myntra,
@@ -474,10 +476,12 @@ export const OffersCashbackData = [
 		alt: "Puma",
 		cashback: "1.9% Cashback",
 	},
-	{ id: 10, 
-		img: Sbi, 
-		alt: "WOW", 
-		cashback: "10% Cashback" },
+	{
+		id: 10,
+		img: Sbi,
+		alt: "WOW",
+		cashback: "10% Cashback"
+	},
 	{
 		id: 11,
 		img: Puma,
@@ -565,7 +569,7 @@ export const Stories = [
 	},
 	{
 		title: "Apple iPhone 16 Review: Feels And Handles Like A Pro",
-		image:  stories1,
+		image: stories1,
 	},
 	{
 		title: "Apple iPhone 16 Pro Review: Still the King?",
@@ -591,135 +595,141 @@ export const Stories = [
 
 export const PopularPriceLiseData = [
 	{
-        title: "Motorola Price List",
-        image: Motrola,
-    },
-    {
-        title: "Xiaomi Price List",
-        image: Mi,
-    },
-    {
-        title: "Huawei Price List",
-        image: Huawei,
-    },
-    {
-        title: "Apple Price List",
-        image: Apple,
-    },
-    {
-        title: "Huawei Price List",
-        image: Hp,
-    },
-    {
-        title: "Xiaomi Price List",
-        image: Lg,
-    },
-    {
-        title: "Apple Price List",
-        image: ben,
-    },
+		title: "Motorola Price List",
+		image: Motrola,
+	},
 	{
-        title: "Motorola Price List",
-        image: Motrola,
-    },
-    {
-        title: "Xiaomi Price List",
-        image: Mi,
-    },
-    {
-        title: "Huawei Price List",
-        image: Huawei,
-    },
-    {
-        title: "Apple Price List",
-        image: Apple,
-    },
-    {
-        title: "Huawei Price List",
-        image: Hp,
-    },
+		title: "Xiaomi Price List",
+		image: Mi,
+	},
+	{
+		title: "Huawei Price List",
+		image: Huawei,
+	},
+	{
+		title: "Apple Price List",
+		image: Apple,
+	},
+	{
+		title: "Huawei Price List",
+		image: Hp,
+	},
+	{
+		title: "Xiaomi Price List",
+		image: Lg,
+	},
+	{
+		title: "Apple Price List",
+		image: ben,
+	},
+	{
+		title: "Motorola Price List",
+		image: Motrola,
+	},
+	{
+		title: "Xiaomi Price List",
+		image: Mi,
+	},
+	{
+		title: "Huawei Price List",
+		image: Huawei,
+	},
+	{
+		title: "Apple Price List",
+		image: Apple,
+	},
+	{
+		title: "Huawei Price List",
+		image: Hp,
+	},
 ];
 
 
 import Sidhart from "../../public/sidhart.jpg";
 export const qaDataRcent = [
-    {
-        id: 1,
-        questions: [
-            {
-                question: "Honda Civic is a Gare or Automatic?",
-                answer: "Honda Civic is both Automatic & Manual.",
-                expertName: "Siddharth Patankar",
-                expertTitle: "Auto Expert",
+	{
+		id: 1,
+		questions: [
+			{
+				question: "Honda Civic is a Gare or Automatic?",
+				answer: "Honda Civic is both Automatic & Manual.",
+				expertName: "Siddharth Patankar",
+				expertTitle: "Auto Expert",
 				img: Sidhart
-            },
-            {
-                question: "What is the mileage of Honda City?",
-                answer: "The Honda City gives a mileage of 18 km/l.",
-                expertName: "Siddharth Patankar",
-                expertTitle: "Auto Expert",
+			},
+			{
+				question: "What is the mileage of Honda City?",
+				answer: "The Honda City gives a mileage of 18 km/l.",
+				expertName: "Siddharth Patankar",
+				expertTitle: "Auto Expert",
 				img: Sidhart
-            },
-            {
-                question: "Is Honda Accord a luxury car?",
-                answer: "Yes, Honda Accord is considered a luxury car.",
-                expertName: "Siddharth Patankar",
-                expertTitle: "Auto Expert",
+			},
+			{
+				question: "Is Honda Accord a luxury car?",
+				answer: "Yes, Honda Accord is considered a luxury car.",
+				expertName: "Siddharth Patankar",
+				expertTitle: "Auto Expert",
 				img: Sidhart
-            }
-        ]
-    },
-    {
-        id: 2,
-        questions: [
-            {
-                question: "What is the top speed of Honda Civic?",
-                answer: "The top speed of Honda Civic is 200 km/h.",
-                expertName: "John Doe",
-                expertTitle: "Car Specialist",
+			}
+		]
+	},
+	{
+		id: 2,
+		questions: [
+			{
+				question: "What is the top speed of Honda Civic?",
+				answer: "The top speed of Honda Civic is 200 km/h.",
+				expertName: "John Doe",
+				expertTitle: "Car Specialist",
 				img: Sidhart
-            },
-            {
-                question: "Does Honda City come with a sunroof?",
-                answer: "Yes, the higher variants of Honda City come with.",
-                expertName: "John Doe",
-                expertTitle: "Car Specialist",
+			},
+			{
+				question: "Does Honda City come with a sunroof?",
+				answer: "Yes, the higher variants of Honda City come with.",
+				expertName: "John Doe",
+				expertTitle: "Car Specialist",
 				img: Sidhart
-            },
-            {
-                question: "Is Honda Accord fuel-efficient?",
-                answer: "Yes, Honda Accord has a fuel efficiency of 15 km/l.",
-                expertName: "John Doe",
-                expertTitle: "Car Specialist",
+			},
+			{
+				question: "Is Honda Accord fuel-efficient?",
+				answer: "Yes, Honda Accord has a fuel efficiency of 15 km/l.",
+				expertName: "John Doe",
+				expertTitle: "Car Specialist",
 				img: Sidhart
-            }
-        ]
-    }
+			}
+		]
+	}
 ];
 
 
 export const insightData = [
-	{ id: 1,
+	{
+		id: 1,
 		head: "Compare Cars",
 		text: ["• Vitara Brezza Vs Ecosport Vs T...", "• Honda BR-V vs Hyundai Creta...", "• Mahindra TUV300 vs Chevrolet E...", "• Mahindra XUV500 vs Tata Aria..."]
 	},
-	{ id: 2,
+	{
+		id: 2,
 		head: "Research",
 		text: ["• Vitara Brezza Vs Ecosport Vs T...", "• Honda BR-V vs Hyundai Creta...", "• Mahindra TUV300 vs Chevrolet E...", "• Mahindra XUV500 vs Tata Aria..."]
 	},
-	{ id: 3,
+	{
+		id: 3,
 		head: "Compare Cars",
 		text: ["• Vitara Brezza Vs Ecosport Vs T...", "• Honda BR-V vs Hyundai Creta...", "• Mahindra TUV300 vs Chevrolet E...", "• Mahindra XUV500 vs Tata Aria..."]
 	},
-	{ id: 4,
+	{
+		id: 4,
 		head: "Compare Cars",
 		text: ["• Vitara Brezza Vs Ecosport Vs T...", "• Honda BR-V vs Hyundai Creta...", "• Mahindra TUV300 vs Chevrolet E...", "• Mahindra XUV500 vs Tata Aria..."]
 	},
-	{ id: 5,
+	{
+		id: 5,
 		head: "Compare Cars",
 		text: ["• Vitara Brezza Vs Ecosport Vs T...", "• Honda BR-V vs Hyundai Creta...", "• Mahindra TUV300 vs Chevrolet E...", "• Mahindra XUV500 vs Tata Aria..."]
 	},
-	{ id: 6,
+	{
+		id: 6,
 		head: "Compare Cars",
 		text: ["• Vitara Brezza Vs Ecosport Vs T...", "• Honda BR-V vs Hyundai Creta...", "• Mahindra TUV300 vs Chevrolet E...", "• Mahindra XUV500 vs Tata Aria..."]
 	}
@@ -801,7 +811,7 @@ export const GenralToolsData = [
 		img: ImageGenral6,
 		name: "Car Videos"
 	},
-	
+
 ]
 
 
@@ -936,8 +946,8 @@ export const ComparePriceandFeaturesData = [
 		titlebTop: "Executive AWD",
 		priceTop: "Rs. 87.99 lacs",
 		titleBottom: "MG HS",
-        titlebBottom: "1.5 Turbo",
-        priceBottom: "Rs. 89 lacs",
+		titlebBottom: "1.5 Turbo",
+		priceBottom: "Rs. 89 lacs",
 		imgTop: compareCarOne,
 		imgBottom: compareCarOne,
 		dataVisible: "Mobiles",
@@ -949,8 +959,8 @@ export const ComparePriceandFeaturesData = [
 		titlebTop: "Executive AWD",
 		priceTop: "Rs. 87.99 lacs",
 		titleBottom: "MG HS",
-        titlebBottom: "1.5 Turbo",
-        priceBottom: "Rs. 89 lacs",
+		titlebBottom: "1.5 Turbo",
+		priceBottom: "Rs. 89 lacs",
 		imgTop: compareCarOne,
 		imgBottom: compareCarOne,
 		dataVisible: "Mobiles",
@@ -962,8 +972,8 @@ export const ComparePriceandFeaturesData = [
 		titlebTop: "Executive AWD",
 		priceTop: "Rs. 87.99 lacs",
 		titleBottom: "MG HS",
-        titlebBottom: "1.5 Turbo",
-        priceBottom: "Rs. 89 lacs",
+		titlebBottom: "1.5 Turbo",
+		priceBottom: "Rs. 89 lacs",
 		imgTop: compareCarOne,
 		imgBottom: compareCarOne,
 		dataVisible: "Mobiles",
@@ -975,8 +985,8 @@ export const ComparePriceandFeaturesData = [
 		titlebTop: "Executive AWD",
 		priceTop: "Rs. 87.99 lacs",
 		titleBottom: "MG HS",
-        titlebBottom: "1.5 Turbo",
-        priceBottom: "Rs. 89 lacs",
+		titlebBottom: "1.5 Turbo",
+		priceBottom: "Rs. 89 lacs",
 		imgTop: compareCarOne,
 		imgBottom: compareCarOne,
 		dataVisible: "Mobiles",
@@ -988,8 +998,8 @@ export const ComparePriceandFeaturesData = [
 		titlebTop: "Executive AWD",
 		priceTop: "Rs. 87.99 lacs",
 		titleBottom: "MG HS",
-        titlebBottom: "1.5 Turbo",
-        priceBottom: "Rs. 89 lacs",
+		titlebBottom: "1.5 Turbo",
+		priceBottom: "Rs. 89 lacs",
 		imgTop: compareCarOne,
 		imgBottom: compareCarOne,
 		dataVisible: "Mobiles",
@@ -1062,7 +1072,7 @@ export const CarListCategroiesData = [
 		seat: "7 Seat",
 		seatImg: Seat,
 		transmission: "Automation",
-        transmissionImg: Transmission,
+		transmissionImg: Transmission,
 		lastInDay: "13%",
 		successScure: "79",
 		dadCard: "Add Component",
@@ -1083,7 +1093,7 @@ export const CarListCategroiesData = [
 		seat: "7 Seat",
 		seatImg: Seat,
 		transmission: "Automation",
-        transmissionImg: Transmission,
+		transmissionImg: Transmission,
 		lastInDay: "13%",
 		successScure: "79",
 		dadCard: "Add Component",
@@ -1104,7 +1114,7 @@ export const CarListCategroiesData = [
 		seat: "7 Seat",
 		seatImg: Seat,
 		transmission: "Automation",
-        transmissionImg: Transmission,
+		transmissionImg: Transmission,
 		lastInDay: "13%",
 		successScure: "79",
 		dadCard: "Add Component",
@@ -1125,7 +1135,7 @@ export const CarListCategroiesData = [
 		seat: "7 Seat",
 		seatImg: Seat,
 		transmission: "Automation",
-        transmissionImg: Transmission,
+		transmissionImg: Transmission,
 		lastInDay: "13%",
 		successScure: "79",
 		dadCard: "Add Component",
@@ -1146,470 +1156,470 @@ export const CarListCategroiesData = [
 		seat: "7 Seat",
 		seatImg: Seat,
 		transmission: "Automation",
-        transmissionImg: Transmission,
+		transmissionImg: Transmission,
 		lastInDay: "13%",
 		successScure: "79",
 		dadCard: "Add Component",
 		button: "See Details",
 		carImg: redcar
 	},
-	
+
 ];
 
 export const DimensionAndWeightData = [
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        dimensions: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		dimensions: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 ];
 
 
 export const EngineData = [
-    {
-        engine: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        engine: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        engine: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        engine: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        engine: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        engine: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		engine: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		engine: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		engine: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		engine: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		engine: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		engine: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 ];
 
 
 export const TransmissionData = [
-    {
-        transmission: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        transmission: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		transmission: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		transmission: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 ];
 
 
 export const WheelTyreData = [
-    {
-        wheelTyre: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        wheelTyre: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        wheelTyre: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        wheelTyre: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		wheelTyre: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		wheelTyre: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		wheelTyre: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		wheelTyre: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 ];
 
 
 export const BrakeData = [
-    {
-        brake: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        brake: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		brake: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		brake: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 
 ];
 
 
 export const SuspensionData = [
-    {
-        suspension: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        suspension: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		suspension: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		suspension: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 
 ];
 
 
 export const FuelEfficiencyData = [
-    {
-        fuelEfficiency: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        fuelEfficiency: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        fuelEfficiency: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        fuelEfficiency: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		fuelEfficiency: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		fuelEfficiency: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		fuelEfficiency: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		fuelEfficiency: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 
 ];
 
 
 export const SteeringData = [
-    {
-        steering: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        steering: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        steering: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		steering: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		steering: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		steering: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 ];
 
 
 export const CapacityData = [
-    {
-        capacity: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
-    {
-        capacity: [
-            "Overall Length",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-            "4456mm",
-            "3995mm",
-        ],
-    },
+	{
+		capacity: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
+	{
+		capacity: [
+			"Overall Length",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+			"4456mm",
+			"3995mm",
+		],
+	},
 ];
 
 
@@ -1618,270 +1628,420 @@ export const cityData = [
 	{
 		city: [
 			"Bangalore",
-		"Mumbai",
-		"Chennai",
-		"Delhi",
-		"Kolkata",
-		"Hyderabad",
-		"Pune",
-		"Noida",
-		"Jaipur",
-		"Lucknow",
-		"Ahmedabad",
-		"Gurugram",
-		"Surat",
-		"Vadodara",
-		"Rajkot",
-		"Bhopal",
-		"Indore",
-		"Nagpur",
-		"Visakhapatnam",
-		"Vijayawada",
-		"Patna",
-		"Agra",
-		"Ludhiana",
-		"Faridabad",
-		"Meerut",
-		"Amritsar",
-		"Srinagar",
-		"Guwahati",
-		"Bhubaneswar",
-		"Chandigarh"
+			"Mumbai",
+			"Chennai",
+			"Delhi",
+			"Kolkata",
+			"Hyderabad",
+			"Pune",
+			"Noida",
+			"Jaipur",
+			"Lucknow",
+			"Ahmedabad",
+			"Gurugram",
+			"Surat",
+			"Vadodara",
+			"Rajkot",
+			"Bhopal",
+			"Indore",
+			"Nagpur",
+			"Visakhapatnam",
+			"Vijayawada",
+			"Patna",
+			"Agra",
+			"Ludhiana",
+			"Faridabad",
+			"Meerut",
+			"Amritsar",
+			"Srinagar",
+			"Guwahati",
+			"Bhubaneswar",
+			"Chandigarh"
 		]
 	}
 ];
 
 export const pinCodeData = [
-		{
-			pincode: [
-				"123456",
-				"123457",
-				"123458",
-				"123459",
-				"123460",
-				"123461",
-				"123462",
-				"123463",
-				"123464",
-				"123465",
-				"123466",
-				"123467",
-				"123468",
-				"123469",
-				"123470",
-				"123471",
-				"123472",
-				"123473",
-				"123474",
-				"123475",
-				"123476",
-				"123477"
-				]
-		}
+	{
+		pincode: [
+			"123456",
+			"123457",
+			"123458",
+			"123459",
+			"123460",
+			"123461",
+			"123462",
+			"123463",
+			"123464",
+			"123465",
+			"123466",
+			"123467",
+			"123468",
+			"123469",
+			"123470",
+			"123471",
+			"123472",
+			"123473",
+			"123474",
+			"123475",
+			"123476",
+			"123477"
+		]
+	}
 ];
 
 
 export const safetyData = [
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "Check", "X", "Check", "Check"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "Check", "X", "Check", "Check"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
 	{
 		title: "Overall Length",
 		icons: ["X", "Check", "Check", "Check", "Check", "Check"],
-	  },
+	},
 	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "Check", "Check", "Check"],
-	  },
+	},
 	{
 		title: "Overall Length",
 		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "Check", "Check", "Check"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
-	  },
-  ];
+	},
+];
 
 
 export const ComfortAndConvenienceData = [
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "Check", "X", "Check", "Check"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "Check", "X", "Check", "Check"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
 	{
 		title: "Overall Length",
 		icons: ["X", "Check", "Check", "Check", "Check", "Check"],
-	  },
+	},
 	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "Check", "Check", "Check"],
-	  },
+	},
 	{
 		title: "Overall Length",
 		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "Check", "Check", "Check"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["X", "X", "X", "X", "X", "X"],
-	  },
-	  {
+	},
+	{
 		title: "Overall Length",
 		icons: ["Check", "Check", "Check", "Check", "Check", "Check"],
-	  },
-  ];
+	},
+];
 
 
 export const LightsData = [
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "Check", "X", "Check", "Check"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "Check", "X", "Check", "Check"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
 
-  ];
+];
 
 
 export const InstrumentationData = [
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "Check", "X", "Check", "Check"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "Check", "X", "Check", "Check"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
-    {
-      title: "Overall Length",
-      icons: ["X", "X", "X", "X", "X", "X"],
-    },
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "Check", "X", "Check", "Check"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "Check", "X", "Check", "Check"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
+	{
+		title: "Overall Length",
+		icons: ["X", "X", "X", "X", "X", "X"],
+	},
 
-  ];
+];
+
+
+import SelectCar1 from "../../public/selectcar/carname1.png";
+import SelectKm from "../../public/selectcar/km.svg";
+import SelectPetrol from "../../public/selectcar/petrol.svg";
+import SelectOwner from "../../public/selectcar/owner.svg";
+import SelectManual from "../../public/selectcar/manual.svg";
+export const SelectCarPriceData = [
+	{
+		carLogo: SelectCar1,
+		title: "Hyundai",
+		price: "Rs. 5,00,0000",
+		newPrice: "1.5 L less than new car price",
+		kmImg: SelectKm,
+		kmTitle: "19,757kms",
+		petrolImg: SelectPetrol,
+		petrolTitle: "petrol",
+		ownerImg: SelectOwner,
+		ownerTitle: "2nd owner",
+		manualImg: SelectManual,
+		manualTitle: "Manual",
+		selectBtn: "GO TO Store",
+		selectBtnUrl: "/about"
+	},
+	{
+		carLogo: SelectCar1,
+		title: "Hyundai",
+		price: "Rs. 5,00,0000",
+		newPrice: "1.5 L less than new car price",
+		kmImg: SelectKm,
+		kmTitle: "19,757kms",
+		petrolImg: SelectPetrol,
+		petrolTitle: "petrol",
+		ownerImg: SelectOwner,
+		ownerTitle: "2nd owner",
+		manualImg: SelectManual,
+		manualTitle: "Manual",
+		selectBtn: "GO TO Store",
+		selectBtnUrl: "/about"
+	},
+	{
+		carLogo: SelectCar1,
+		title: "Hyundai",
+		price: "Rs. 5,00,0000",
+		newPrice: "1.5 L less than new car price",
+		kmImg: SelectKm,
+		kmTitle: "19,757kms",
+		petrolImg: SelectPetrol,
+		petrolTitle: "petrol",
+		ownerImg: SelectOwner,
+		ownerTitle: "2nd owner",
+		manualImg: SelectManual,
+		manualTitle: "Manual",
+		selectBtn: "GO TO Store",
+		selectBtnUrl: "/about"
+	},
+	{
+		carLogo: SelectCar1,
+		title: "Hyundai",
+		price: "Rs. 5,00,0000",
+		newPrice: "1.5 L less than new car price",
+		kmImg: SelectKm,
+		kmTitle: "19,757kms",
+		petrolImg: SelectPetrol,
+		petrolTitle: "petrol",
+		ownerImg: SelectOwner,
+		ownerTitle: "2nd owner",
+		manualImg: SelectManual,
+		manualTitle: "Manual",
+		selectBtn: "GO TO Store",
+		selectBtnUrl: "/about"
+	},
+	{
+		carLogo: SelectCar1,
+		title: "Hyundai",
+		price: "Rs. 5,00,0000",
+		newPrice: "1.5 L less than new car price",
+		kmImg: SelectKm,
+		kmTitle: "19,757kms",
+		petrolImg: SelectPetrol,
+		petrolTitle: "petrol",
+		ownerImg: SelectOwner,
+		ownerTitle: "2nd owner",
+		manualImg: SelectManual,
+		manualTitle: "Manual",
+		selectBtn: "GO TO Store",
+		selectBtnUrl: "/about"
+	},
+	{
+		carLogo: SelectCar1,
+		title: "Hyundai",
+		price: "Rs. 5,00,0000",
+		newPrice: "1.5 L less than new car price",
+		kmImg: SelectKm,
+		kmTitle: "19,757kms",
+		petrolImg: SelectPetrol,
+		petrolTitle: "petrol",
+		ownerImg: SelectOwner,
+		ownerTitle: "2nd owner",
+		manualImg: SelectManual,
+		manualTitle: "Manual",
+		selectBtn: "GO TO Store",
+		selectBtnUrl: "/about"
+	},
+];
+
+
+export const RoadPriceCarData = [
+	{
+		car: [
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+		]
+	}
+];
+
+
+export const RoadPriceCarVitraData = [
+	{
+		vitra: [
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+		]
+	}
+];
+
+
+export const RoadPriceCarLDIData = [
+	{
+		ldi: [
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+			"demo",
+		]
+	}
+];
