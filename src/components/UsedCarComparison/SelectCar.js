@@ -86,17 +86,17 @@ export default function SelectCar({ uniqueId }) {
             <ChevronLeft />
           </button>
 
-          <div className="sm:hidden flex justify-center items-center mt-2">
+          <div className="sm:hidden flex justify-center items-center mt-2 gap-2">
             {/* Navigation Buttons */}
             <button
-              className={`swiper-button-prev-${uniqueId} border-2 size-10 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor ${isBeginning ? "opacity-50" : ""
+              className={`swiper-button-prev-${uniqueId} border-2 size-8 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor ${isBeginning ? "opacity-50" : ""
                 }`}
             >
               <ChevronLeft />
             </button>
 
             <button
-              className={`swiper-button-next-${uniqueId} border-2 size-10 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor bottom-0 ${isEnd ? "opacity-50" : ""
+              className={`swiper-button-next-${uniqueId} border-2 size-8 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor bottom-0 ${isEnd ? "opacity-50" : ""
                 }`}
             >
               <ChevronRight />
