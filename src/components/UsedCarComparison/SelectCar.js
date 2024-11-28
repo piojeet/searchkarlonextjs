@@ -30,18 +30,22 @@ export default function SelectCar({ uniqueId }) {
     <div>
       <div className="sm:p-4">
         {/* Main Image Box */}
-        <div className="w-[15rem] h-[11rem] mx-auto">
+        <div className="md:w-[15rem] md:h-[11rem] mx-auto h-[45vw]">
           <Image alt="Selected IMG" className="w-full" src={selectedImage} />
         </div>
 
         <div className="relative">
-          <div className="w-52 mx-auto">
+          <div className="md:w-52 mx-auto w-[40vw]">
             <Swiper
-              slidesPerView={3}
+              slidesPerView="auto"
               spaceBetween={15}
               navigation={{
                 nextEl: `.swiper-button-next-${uniqueId}`,
                 prevEl: `.swiper-button-prev-${uniqueId}`,
+              }}
+              breakpoints={{
+                320: { slidesPerView: 2, spaceBetween: 10 },
+                768: { slidesPerView: 3 },
               }}
               onSlideChange={(swiper) => {
                 setIsBeginning(swiper.isBeginning);
@@ -53,14 +57,14 @@ export default function SelectCar({ uniqueId }) {
               {imageData.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="border-2 rounded-md cursor-pointer"
+                  className="cursor-pointer"
                   onClick={() => handleImageClick(item.url)} // Handle click
                 >
-                  <div className="h-16 content-center">
+                  <div className="h-16 content-center border-2 rounded-md">
                     <Image
                       alt={`IMG ${index}`}
                       src={item.url}
-                      className="w-full"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </SwiperSlide>
@@ -70,19 +74,36 @@ export default function SelectCar({ uniqueId }) {
 
           {/* Navigation Buttons */}
           <button
-            className={`swiper-button-next-${uniqueId} absolute right-0 top-1/2 -translate-y-1/2 border-2 size-10 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor ${
-              isEnd ? "opacity-50" : ""
-            }`}
+            className={`swiper-button-next-${uniqueId} absolute md:right-0 md:top-1/2 -translate-y-1/2 border-2 size-10 rounded-md sm:flex items-center justify-center bg-lightOrange text-whiteColor bottom-0 hidden ${isEnd ? "opacity-50" : ""
+              }`}
           >
             <ChevronRight />
           </button>
           <button
-            className={`swiper-button-prev-${uniqueId} absolute top-1/2 left-0 -translate-y-1/2 border-2 size-10 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor ${
-              isBeginning ? "opacity-50" : ""
-            }`}
+            className={`swiper-button-prev-${uniqueId} absolute top-1/2 left-0 -translate-y-1/2 border-2 size-10 rounded-md sm:flex items-center justify-center bg-lightOrange text-whiteColor hidden ${isBeginning ? "opacity-50" : ""
+              }`}
           >
             <ChevronLeft />
           </button>
+
+          <div className="sm:hidden flex justify-center items-center mt-2">
+            {/* Navigation Buttons */}
+            <button
+              className={`swiper-button-prev-${uniqueId} border-2 size-10 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor ${isBeginning ? "opacity-50" : ""
+                }`}
+            >
+              <ChevronLeft />
+            </button>
+
+            <button
+              className={`swiper-button-next-${uniqueId} border-2 size-10 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor bottom-0 ${isEnd ? "opacity-50" : ""
+                }`}
+            >
+              <ChevronRight />
+            </button>
+            
+          </div>
+
         </div>
       </div>
     </div>

@@ -31,10 +31,8 @@ export default function ProductDiscriptionScore() {
     const [rating, setRating] = useState(3); // Default 3 stars filled
 
     return (
-        <div className="lg:p-0 p-4">
-            <div className="block lg:hidden">
-            <ProductDiscriptionFetures />
-            </div>
+        <div className="xl:p-0 p-4 pt-0">
+
             <div className="text-xs flex items-stretch justify-between gap-2 font-semibold border-2 rounded-md overflow-hidden lg:flex-row flex-col">
                 <div className="bg-buttonColor text-whiteColor content-center whitespace-nowrap p-4">Score 89</div>
                 
@@ -101,9 +99,8 @@ export default function ProductDiscriptionScore() {
             </div>
             
             <ProductDiscriptionPrice />
-            <div className="lg:block hidden">
+
             <ProductDiscriptionFetures />
-            </div>
         </div>
     )
 }

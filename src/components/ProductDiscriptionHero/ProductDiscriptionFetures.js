@@ -10,12 +10,13 @@ import Cell from "../../../public/share/mdi_fuel-cell.svg";
 import Rupee from "../../../public/share/Rupee.svg";
 import Percent from "../../../public/share/percent.svg";
 import Insurance from "../../../public/share/insurance.svg";
+
 import { Play, ThumbsDown, ThumbsUp } from "lucide-react";
 
 export default function ProductDiscriptionFetures() {
   return (
     <div>
-        <div className="flex justify-between border border-black p-2 text-sm lg:flex-row flex-col">
+        <div className="sm:flex justify-between border border-black p-2 text-sm lg:flex-row flex-col hidden">
             <div className="space-y-2 p-4">
                 <div className="flex items-center gap-4">
                     <div>Fuel Type</div>
@@ -72,8 +73,9 @@ export default function ProductDiscriptionFetures() {
             <div className="space-y-2 p-4">
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2"><Image src={Warranty} alt="Img" className="size-6" />Warranty</div>
-                    <div className="bg-gray-200 px-2">5Years</div>
+                    <div className="bg-gray-200 px-2">7Year</div>
                 </div>
+
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2"><Image src={Fuel} alt="Img" className="size-6" />Fuel Tank</div>
                     <div className="bg-gray-200 px-2">67 Liter</div>
@@ -88,10 +90,10 @@ export default function ProductDiscriptionFetures() {
 
 <div className="flex w-fit items-center gap-2 lg:ml-auto my-4">View All Spaces & Features <Play stroke="#fff" fill="#fff" size={35} className="bg-[#C82222] rounded-full p-2 cursor-pointer" /></div>
 
-<div className="flex justify-between p-4 pt-0 lg:flex-row flex-col lg:gap-0 gap-4">
+<div className="flex justify-between lg:p-4 pt-0 lg:flex-row flex-col lg:gap-0 gap-4">
     <div>
         <div className="flex items-center gap-2 font-bold text-lg"><ThumbsUp size={20} fill="#5DB506" className="text-[#5DB506]" /> Pros</div>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-4 text-sm">
             <li>Long list of features.</li>
             <li>Engine & gearbox options.</li>
             <li>Expected to have high safety</li>
@@ -99,7 +101,7 @@ export default function ProductDiscriptionFetures() {
     </div>
     <div>
         <div className="flex items-center gap-2 font-bold text-lg"><ThumbsDown size={20} fill="#C82222" className="text-[#C82222]" /> Cons</div>
-        <ul className="list-disc pl-4">
+        <ul className="list-disc pl-4 text-sm">
             <li>Long list of features.</li>
             <li>Engine & gearbox options.</li>
             <li>Expected to have high safety</li>
@@ -107,13 +109,13 @@ export default function ProductDiscriptionFetures() {
     </div>
 
     <div className="flex gap-4">
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between text-sm">
             <div className="flex items-center gap-2"><Image src={Car} alt="Img" className="size-6" /> Test drive</div>
             <div className="flex items-center gap-2"><Image src={Rupee} alt="Img" className="size-6" /> EMI Option</div>
             <div className="flex items-center gap-2"><Image src={Rupee} alt="Img" className="size-6" /> Bank Financing</div>
            
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between text-sm">
         <div className="flex items-center gap-2"><Image src={Percent} alt="Img" className="size-6" /> Discount</div>
         <div className="flex items-center gap-2"><Image src={Insurance} alt="Img" className="size-6" /> Insurance</div>
         <div className="flex items-center gap-2"><Image src={Insurance} alt="Img" className="size-6" /> Insurance</div>
