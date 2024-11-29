@@ -10,7 +10,7 @@ import Petrol from "../../../public/carlist/Fuel Station.png";
 export default function CarFeaturesMobile() {
   return (
     <div>
-        <div className="flex justify-between border border-black p-2 text-xs lg:flex-row flex-col sm:hidden mt-4">
+        <div className="flex justify-between p-2 text-xs lg:flex-row flex-col sm:hidden mt-4 h-full">
 
 
 

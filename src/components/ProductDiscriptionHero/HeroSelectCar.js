@@ -5,7 +5,7 @@ import CarFeaturesMobile from "./CarFeaturesMobile";
 export default function HeroSelectCar() {
   return (
     <div className="p-4">
-      <div>
+      <div className="border-2 rounded-md p-2">
 
         <div className="flex items-center justify-between">
           <div className="font-semibold">Maruti Suzuki Wagonr</div>
@@ -13,9 +13,12 @@ export default function HeroSelectCar() {
         </div>
 
         <div className="grid grid-cols-[1fr_110px] sm:block gap-2">
+
           <SelectCar />
           <CarFeaturesMobile />
+
         </div>
+
 
         <div className="text-sm space-y-4 sm:pt-0 pt-4">
           <button className="block w-fit mx-auto py-2 bg-lightOrange rounded-md px-4 text-whiteColor"><span className="flex items-center gap-1"><Bell stroke="#fff" fill="#fff" /> Set Price Drop Alert</span></button>
@@ -25,6 +28,9 @@ export default function HeroSelectCar() {
             <button className="block w-fit mx-auto py-2 bg-buttonColor rounded-md px-4 text-whiteColor"><span className="flex items-center gap-1"><Play stroke="#003366" fill="#003366" className="bg-whiteColor rounded-full p-1" />Videos</span></button>
           </div>
         </div>
+
+
+
 
         <div className="space-y-2 mt-4">
           <div className="flex items-center justify-between text-sm">
