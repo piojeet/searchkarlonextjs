@@ -30,15 +30,15 @@ export default function SelectCar({ uniqueId }) {
     <div>
       <div className="sm:p-4">
         {/* Main Image Box */}
-        <div className="md:w-[15rem] md:h-[11rem] mx-auto h-[45vw]">
+        <div className="md:w-[15rem] md:h-[11rem] mx-auto h-[35vw] w-[50vw]">
           <Image alt="Selected IMG" className="w-full" src={selectedImage} />
         </div>
 
         <div className="relative">
-          <div className="md:w-52 mx-auto w-[40vw]">
+          <div className="md:w-44 mx-auto w-[40vw]">
             <Swiper
               slidesPerView="auto"
-              spaceBetween={15}
+              spaceBetween={10}
               navigation={{
                 nextEl: `.swiper-button-next-${uniqueId}`,
                 prevEl: `.swiper-button-prev-${uniqueId}`,
@@ -86,23 +86,6 @@ export default function SelectCar({ uniqueId }) {
             <ChevronLeft />
           </button>
 
-          <div className="sm:hidden flex justify-center items-center mt-2 gap-2">
-            {/* Navigation Buttons */}
-            <button
-              className={`swiper-button-prev-${uniqueId} border-2 size-8 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor ${isBeginning ? "opacity-50" : ""
-                }`}
-            >
-              <ChevronLeft />
-            </button>
-
-            <button
-              className={`swiper-button-next-${uniqueId} border-2 size-8 rounded-md flex items-center justify-center bg-lightOrange text-whiteColor bottom-0 ${isEnd ? "opacity-50" : ""
-                }`}
-            >
-              <ChevronRight />
-            </button>
-            
-          </div>
 
         </div>
       </div>

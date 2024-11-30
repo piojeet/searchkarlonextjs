@@ -1,11 +1,12 @@
-import { CircleAlert, CircleChevronDown, IndianRupee, Pencil } from "lucide-react";
+import { CircleAlert, CircleChevronDown, IndianRupee } from "lucide-react";
+import SelectYourLocationPopup from "./SelectYourLocationPopup";
 
 export default function ProductDiscriptionPrice() {
     return (
         <div className="space-y-4 my-4">
             <div className="flex items-center gap-2 flex-wrap">
                 <div className="font-semibold text-lg">Price  ₹6.3 - 8.8 Lakh</div>
-                <div className="flex items-center gap-1 text-sm">*Ex-showroom Price in <span className="text-[#2F88FF] flex items-center gap-1 text-sm">New Delhi <Pencil size={15} /></span></div>
+                <div className="flex items-center gap-1 text-sm relative">*Ex-showroom Price in <span className="flex items-center gap-1 text-sm"><SelectYourLocationPopup /></span></div>
                 <div className="text-sm">Get On-Road Price</div>
                 <IndianRupee size={16} className="border-2 border-lightOrange rounded-full p-0.5 text-lightOrange" />
                 <div className="text-sm">Price Break-up</div>

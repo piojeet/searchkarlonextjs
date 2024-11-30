@@ -20,7 +20,7 @@ export default function HeroSelectCar() {
         </div>
 
 
-        <div className="text-sm space-y-4 sm:pt-0 pt-4">
+        <div className="text-sm space-y-4 sm:pt-0 pt-4 sm:block hidden">
           <button className="block w-fit mx-auto py-2 bg-lightOrange rounded-md px-4 text-whiteColor"><span className="flex items-center gap-1"><Bell stroke="#fff" fill="#fff" /> Set Price Drop Alert</span></button>
 
           <div className="flex items-center gap-2 md:flex-row flex-col">
