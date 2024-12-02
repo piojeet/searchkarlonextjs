@@ -88,12 +88,12 @@ export default function ProductDiscriptionFetures() {
             </div>
         </div>
 
-<div className="flex w-fit items-center gap-2 lg:ml-auto my-4">View All Spaces & Features <Play stroke="#fff" fill="#fff" size={35} className="bg-[#C82222] rounded-full p-2 cursor-pointer" /></div>
+<div className="sm:flex hidden w-fit items-center gap-2 lg:ml-auto my-4">View All Spaces & Features <Play stroke="#fff" fill="#fff" size={35} className="bg-[#C82222] rounded-full p-2 cursor-pointer" /></div>
 
-<div className="flex justify-between lg:p-4 pt-0 lg:flex-row flex-col lg:gap-0 gap-4">
+<div className="flex justify-between lg:p-4 pt-0 flex-wrap lg:gap-0 gap-4 mt-4 sm:mt-0">
     <div>
         <div className="flex items-center gap-2 font-bold text-lg"><ThumbsUp size={20} fill="#5DB506" className="text-[#5DB506]" /> Pros</div>
-        <ul className="list-disc pl-4 text-sm">
+        <ul className="list-disc pl-4 sm:text-sm text-xs">
             <li>Long list of features.</li>
             <li>Engine & gearbox options.</li>
             <li>Expected to have high safety</li>
@@ -101,7 +101,7 @@ export default function ProductDiscriptionFetures() {
     </div>
     <div>
         <div className="flex items-center gap-2 font-bold text-lg"><ThumbsDown size={20} fill="#C82222" className="text-[#C82222]" /> Cons</div>
-        <ul className="list-disc pl-4 text-sm">
+        <ul className="list-disc pl-4 sm:text-sm text-xs">
             <li>Long list of features.</li>
             <li>Engine & gearbox options.</li>
             <li>Expected to have high safety</li>
@@ -109,13 +109,13 @@ export default function ProductDiscriptionFetures() {
     </div>
 
     <div className="flex gap-4">
-        <div className="flex flex-col justify-between text-sm">
+        <div className="flex flex-col justify-between sm:text-sm text-xs">
             <div className="flex items-center gap-2"><Image src={Car} alt="Img" className="size-6" /> Test drive</div>
             <div className="flex items-center gap-2"><Image src={Rupee} alt="Img" className="size-6" /> EMI Option</div>
             <div className="flex items-center gap-2"><Image src={Rupee} alt="Img" className="size-6" /> Bank Financing</div>
            
         </div>
-        <div className="flex flex-col justify-between text-sm">
+        <div className="flex flex-col justify-between sm:text-sm text-xs">
         <div className="flex items-center gap-2"><Image src={Percent} alt="Img" className="size-6" /> Discount</div>
         <div className="flex items-center gap-2"><Image src={Insurance} alt="Img" className="size-6" /> Insurance</div>
         <div className="flex items-center gap-2"><Image src={Insurance} alt="Img" className="size-6" /> Insurance</div>

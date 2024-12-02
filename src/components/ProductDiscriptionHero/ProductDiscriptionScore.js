@@ -32,71 +32,71 @@ export default function ProductDiscriptionScore() {
     return (
         <div className="xl:p-0 p-4 pt-0">
 
-            <div className="text-xs flex items-stretch justify-between gap-2 font-semibold  overflow-hidden lg:flex-row flex-col sm:border-2 rounded-md">
+            <div className="text-xs flex items-stretch justify-between gap-2 font-semibold  overflow-hidden xl:flex-row flex-col sm:border-2 sm:rounded-md">
                 <div className="bg-buttonColor text-whiteColor content-center whitespace-nowrap p-4 sm:block hidden">Score 89</div>
-                
-                <div className="flex items-center justify-between gap-2 py-2 w-full flex-wrap">
-                <div className="sm:block flex text-xs">
-                    <div className="flex items-center sm:gap-2 gap-1 text-xs">
-                    <div className="flex items-center">
-                        {Array.from({ length: 5 }, (_, index) => (
-                            <Star
-                                key={index}
-                                filled={index < rating}
-                                // onClick={() => setRating(index + 1)}
-                            />
-                        ))}
+
+                <div className="flex items-center justify-between gap-2 py-2 w-full flex-wrap sm:flex-col xl:flex-row xl:flex-nowrap">
+                    <div className="sm:block flex text-xs">
+                        <div className="flex items-center sm:gap-2 gap-1 text-xs">
+                            <div className="flex items-center">
+                                {Array.from({ length: 5 }, (_, index) => (
+                                    <Star
+                                        key={index}
+                                        filled={index < rating}
+                                    // onClick={() => setRating(index + 1)}
+                                    />
+                                ))}
+                            </div>
+                            <div className="leading-none">3.0 / 5</div>
+                        </div>
+                        <div>based on 104 Reviews</div>
                     </div>
-                    <div className="leading-none">3.0 / 5</div>
+                    <span className="xl:h-10 xl:w-px h-px w-full bg-gray-400 sm:block hidden"></span>
+
+                    <div>Write a Review</div>
+                    <span className="xl:h-10 xl:w-px h-px w-full bg-gray-400 sm:block hidden"></span>
+
+                    <div className="sm:block hidden">Confused?</div>
+                    <span className="xl:h-10 xl:w-px h-px w-full bg-gray-400 sm:block hidden"></span>
+
+                    <div className="sm:block hidden">Add to Wishlist</div>
+                    <span className="xl:h-10 xl:w-px h-px w-full bg-gray-400 sm:block hidden"></span>
+
+                    <div className="sm:flex hidden items-center gap-2">
+                        <div>Share</div>
+                        {/* SOCIAL LINKS */}
+                        <div className="flex items-center gap-1 lg:border-r-2 border-white py-[5px] pr-3">
+                            <Link href="/">
+                                <Image src={Facebook} alt="Img" className="size-5 3xl:size-6" />
+                            </Link>
+                            <Link href="/">
+                                <Image src={Twitter} alt="Img" className="size-5 3xl:size-6" />
+                            </Link>
+                            <Link href="/">
+                                <Image src={Linkedin} alt="Img" className="size-5 3xl:size-6" />
+                            </Link>
+
+                            <Link href="/">
+                                <Image src={Pinterest} alt="Img" className="size-5 3xl:size-6" />
+                            </Link>
+                            <Link href="/">
+                                <Image src={Instagram} alt="Img" className="size-5 3xl:size-6" />
+                            </Link>
+
+                        </div>
                     </div>
-                    <div>based on 104 Reviews</div>
-                </div>
-                <span className="lg:h-10 lg:w-px h-px w-full bg-gray-400 lg:block hidden"></span>
+                    <span className="xl:h-10 xl:w-px h-px w-full bg-gray-400 sm:block hidden"></span>
 
-                <div>Write a Review</div>
-                <span className="lg:h-10 lg:w-px h-px w-full bg-gray-400 lg:block hidden"></span>
-
-                <div className="sm:block hidden">Confused?</div>
-                <span className="lg:h-10 lg:w-px h-px w-full bg-gray-400 lg:block hidden"></span>
-
-                <div className="sm:block hidden">Add to Wishlist</div>
-                <span className="lg:h-10 lg:w-px h-px w-full bg-gray-400 lg:block hidden"></span>
-
-                <div className="sm:flex hidden items-center gap-2">
-                    <div>Share</div>
-                    {/* SOCIAL LINKS */}
-                <div className="flex items-center gap-1 lg:border-r-2 border-white py-[5px] pr-3">
-                    <Link href="/">
-                        <Image src={Facebook} alt="Img" className="size-5 3xl:size-6" />
-                    </Link>
-                    <Link href="/">
-                        <Image src={Twitter} alt="Img" className="size-5 3xl:size-6" />
-                    </Link>
-                    <Link href="/">
-                        <Image src={Linkedin} alt="Img" className="size-5 3xl:size-6" />
-                    </Link>
-
-                    <Link href="/">
-                        <Image src={Pinterest} alt="Img" className="size-5 3xl:size-6" />
-                    </Link>
-                    <Link href="/">
-                        <Image src={Instagram} alt="Img" className="size-5 3xl:size-6" />
-                    </Link>
-  
-                </div>
-                </div>
-                <span className="lg:h-10 lg:w-px h-px w-full bg-gray-400 lg:block hidden"></span>
-
-                <div className="py-2 px-4 bg-[#5DB506] text-whiteColor rounded-md sm:block hidden">Compare Features</div>
-                <span className="lg:h-10 lg:w-px h-px w-full bg-gray-400 lg:block hidden"></span>
-                <div className="sm:flex hidden items-center gap-2 pr-2">
-                    <div><ThumbsUp size={16} /></div>
-                    <div><ThumbsDown size={16} /></div>
-                </div>
+                    <div className="py-2 px-4 bg-[#5DB506] text-whiteColor rounded-md sm:block hidden">Compare Features</div>
+                    <span className="xl:h-10 xl:w-px h-px w-full bg-gray-400 sm:block hidden"></span>
+                    <div className="sm:flex hidden items-center gap-2 pr-2">
+                        <div><ThumbsUp size={16} /></div>
+                        <div><ThumbsDown size={16} /></div>
+                    </div>
                 </div>
 
             </div>
-            
+
             <ProductDiscriptionPrice />
 
             <ProductDiscriptionFetures />
