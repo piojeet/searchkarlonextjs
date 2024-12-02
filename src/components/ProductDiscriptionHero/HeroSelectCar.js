@@ -4,7 +4,7 @@ import CarFeaturesMobile from "./CarFeaturesMobile";
 
 export default function HeroSelectCar() {
   return (
-    <div className="p-4">
+    <div className="p-4 pb-0 sm:pb-4">
       <div className="border-2 rounded-md p-2">
 
         <div className="flex items-center justify-between">
