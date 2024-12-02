@@ -79,7 +79,7 @@ export default function SelectYourLocationPopup() {
 
         {/* Dropdown */}
         {dropdownOpen && (
-          <div className="absolute top-8 right-0 lg:left-0 bg-white border rounded shadow-lg w-64 z-50">
+          <div className="absolute top-8 right-0 lg:left-1/2 bg-white border rounded shadow-lg w-64 z-50">
             {/* Search Bar */}
             <div className="p-2 border-b">
               <div className="border rounded flex items-center pl-2">
