@@ -10,7 +10,7 @@ export default function ProductDiscriptionPrice() {
         <div className="sm:space-y-4 sm:my-4">
             <div className="flex items-center gap-2 flex-wrap">
                 <div className="font-semibold lg:text-lg">Price  ₹6.3 - 8.8 Lakh</div>
-                <div className="font-semibold lg:text-lg flex sm:hidden items-center gap-1 text-[#4B51A7]">Change Variant <CircleChevronDown size={16} /></div>
+                <div className="font-semibold lg:text-lg flex sm:hidden items-center gap-1 text-[#4B51A7]" onClick={()=> scrollToDiv("variants")}>Change Variant <CircleChevronDown size={16} /></div>
                 <div className="flex items-center sm:gap-2 gap-1 flex-wrap">
                     <div className="sm:text-sm text-xs">*Ex-showroom Price in </div>
                     <div className="flex items-center gap-1 text-sm relative"><span className="flex items-center gap-1 sm:text-sm text-xs"><SelectYourLocationPopup /></span></div>
