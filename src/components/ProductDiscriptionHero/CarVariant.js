@@ -1,6 +1,6 @@
 "use client";
 
-import { BadgePercent, ChevronDown, ChevronUp, Filter } from "lucide-react";
+import { BadgePercent, ChevronDown, ChevronUp, Filter, Search } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -48,6 +48,12 @@ export default function CarVariant() {
                 </div>
 
                 <div className="p-4 bg-gray-100 rounded-md space-y-4">
+
+<div className="flex items-center relative">
+    <div className="absolute left-2 pointer-events-none"><Search size={18} /></div>
+    <input type="text" placeholder="Search" className="pl-8 py-2 outline-none rounded-md" />
+</div>
+
                     <div className="flex items-center gap-1 text-gray-500"><Filter size={16} /><span className="sm:text-sm text-xs">Filter By</span> <span className="sm:text-sm text-[0.5rem]">Fuel type, Transmission and Seating Capacity</span></div>
                     <div className="flex sm:gap-4 gap-2 sm:text-sm text-xs">
                         <button className="py-1.5 border border-black sm:px-4 px-3 uppercase rounded-md bg-whiteColor hover:text-darkOrange hover:border-darkOrange">electric</button>
