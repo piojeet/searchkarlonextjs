@@ -1,6 +1,6 @@
 "use client";
 
-import { BadgePercent, Filter } from "lucide-react";
+import { BadgePercent, ChevronDown, ChevronUp, Filter } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -11,9 +11,15 @@ export default function CarVariant() {
         setIsExpanded(!isExpanded);
     };
 
+    const [isExpandedt, setIsExpandedt] = useState(false);
+
+    const toggleContentt = () => {
+        setIsExpandedt(!isExpandedt);
+    };
+
     return (
         <div className="lg:p-6 sm:p-4" id="variants">
-            <div className="sm:border rounded-md py-4">
+            <div className="sm:border rounded-md py-4 relative">
             <div className="sm:px-4 space-y-4">
                 <div className="w-full mx-auto px-4">
                     <div className="font-bold text-lg mb-2">Maruti Suzuki Wagonr Variants</div>
@@ -53,7 +59,9 @@ export default function CarVariant() {
                 </div>
             </div>
 
-            <div className="border-b pb-2 mb-2 flex items-center justify-between px-4 mt-4 sm:text-sm text-gray-500 text-xs">
+            {isExpandedt && (
+                <>
+                <div className="border-b pb-2 mb-2 flex items-center justify-between px-4 mt-4 sm:text-sm text-gray-500 text-xs">
                 <div>Wagonr Variants</div>
                 <div>Price in current location</div>
                 <div className="sm:block hidden">Compare</div>
@@ -92,6 +100,10 @@ export default function CarVariant() {
 
                 <div className="bg-gray-100 px-4 py-2 sm:text-sm text-xs text-gray-500">Key Features : 7 Airbags</div>
             </div>
+                </>
+            )}
+
+            <button onClick={toggleContentt} className="lg:text-sm text-xs flex items-center gap-1 absolute bottom-0 left-1/2 -translate-x-1/2 text-[#0288D1]">{isExpandedt ? "Less variant" : "more variant"} {!isExpandedt && <ChevronDown size={18} />}{isExpandedt && <ChevronUp size={18} />}</button>
         </div>
         </div>
     );
