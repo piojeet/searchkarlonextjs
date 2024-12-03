@@ -9,7 +9,7 @@ module.exports = {
     screens: {
       xs: '320px',   // Extra small devices, e.g., small phones
       md: '420px',
-      sm: '640px',   // Small devices, e.g., larger phones
+      sm: '768px',   // Small devices, e.g., larger phones
       lg: '1024px',  // Large devices, e.g., small desktops
       xl: '1169px',  // Extra large devices, e.g., medium desktops
       '2xl': '1283px', // 2XL devices, e.g., large desktops

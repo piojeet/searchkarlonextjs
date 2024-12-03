@@ -23,6 +23,13 @@ export function AuthProvider({ children }) {
     const [tcoCalculatorAffordabilityActiveTab, setTcoCalculatorAffordabilityActiveTab] = useState('emi-calculator');
     
 
+    const scrollToDiv = (id) => {
+        const target = document.getElementById(id);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
     return (
         <AuthContext.Provider 
         value={{ 
@@ -34,6 +41,7 @@ export function AuthProvider({ children }) {
             setPriceFuelActiveTab,
             tcoCalculatorAffordabilityActiveTab,
             setTcoCalculatorAffordabilityActiveTab,
+            scrollToDiv
             }}>
             {children}
         </AuthContext.Provider>
