@@ -8,7 +8,7 @@ export default function ProductDiscriptionPrice() {
 
     return (
         <div className="sm:space-y-4 sm:my-4">
-            <div className="flex items-center gap-2 flex-wrap">
+            <div className="flex items-center gap-2 flex-wrap justify-between">
                 <div className="font-semibold lg:text-lg">Price  ₹6.3 - 8.8 Lakh</div>
                 <div className="text-xs flex sm:hidden items-center gap-1 text-[#0288D1]" onClick={()=> scrollToDiv("variants")}>Change Variant <CircleChevronDown size={16} /></div>
                 <div className="flex items-center sm:gap-2 gap-1 flex-wrap">

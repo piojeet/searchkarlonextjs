@@ -68,7 +68,7 @@ export default function SelectYourLocationPopup() {
       <div className="relative" ref={dropdownRef}>
         {/* Trigger Button */}
         <button
-          className="flex items-center gap-2 text-[#2F88FF] text-sm"
+          className="flex items-center lg:gap-2 gap-1 text-[#2F88FF] lg:text-sm text-xs"
           
         >
           <span>{selectedCity}</span>
@@ -79,7 +79,7 @@ export default function SelectYourLocationPopup() {
 
         {/* Dropdown */}
         {dropdownOpen && (
-          <div className="absolute top-8 -right-1/3 lg:left-0 bg-white border rounded shadow-lg w-64 z-50">
+          <div className="absolute top-8 -right-1/2 lg:left-0 bg-white border rounded shadow-lg w-64 z-50">
             {/* Search Bar */}
             <div className="p-2 border-b">
               <div className="border rounded flex items-center pl-2">
