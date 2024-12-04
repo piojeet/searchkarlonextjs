@@ -106,7 +106,7 @@ const LoanTimePeriod = ({
   };
 
   return (
-    <div className="w-full max-w-md select-none">
+    <div className="w-full select-none">
       <div className="text-sm flex items-center justify-between pb-4">
         <div>Loan Tenure</div>
         <div className="flex items-center gap-2">

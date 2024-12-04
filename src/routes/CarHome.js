@@ -6,7 +6,6 @@ import BannerSwiper from "@/components/Bannners/BannerSwiper";
 import CarForTco from "@/components/CarForTco/CarForTco";
 import CarValidation from "@/components/CarValidation/CarValidation";
 import Categories from "@/components/Categories/Categories";
-import Calculate from "@/components/EMICalculator/CarLoanAmountCalculator";
 import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
 import AskExpertis from "@/components/ExpertisQ&A/AskExpertis";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
@@ -25,6 +24,7 @@ import SearchDealers from "@/components/SearchDealersbyCity&Brand/SearchDealers"
 import SelectbyPrice from "@/components/SelectPriceAndSelectFuel/SelectbyPrice";
 import CarList from "@/components/CarListCategories/CarList";
 import FreeCarListing from "@/components/HeroCarPage/FreeCarListing";
+import EMICalCulateMAin from "@/components/EMICalculator/EMICalCulateMAin";
 
 export default function CarHome() {
   return (
@@ -36,7 +36,7 @@ export default function CarHome() {
         {/* <BestAppliancesList /> */}
         <CarPageHero />
         <Categories />
-        <Calculate />
+        <EMICalCulateMAin />
         <BannerSwiper />
         <CarList />
         <ComparePriceandFeatures />

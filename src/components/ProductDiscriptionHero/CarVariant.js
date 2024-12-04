@@ -1,5 +1,6 @@
 "use client";
 
+import { useAuthContext } from "@/context/AuthContext";
 import { BadgePercent, ChevronDown, ChevronUp, Filter, Search } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -16,6 +17,8 @@ export default function CarVariant() {
     const toggleContentt = () => {
         setIsExpandedt(!isExpandedt);
     };
+
+    const {selectedCity} = useAuthContext();
 
     return (
         <div className="lg:p-6 sm:p-4" id="variants">
@@ -69,7 +72,7 @@ export default function CarVariant() {
                 <>
                 <div className="border-b pb-2 mb-2 flex items-center justify-between px-4 mt-4 sm:text-sm text-gray-500 text-xs">
                 <div>Wagonr Variants</div>
-                <div>Price in current location</div>
+                <div>Price in {selectedCity}</div>
                 <div className="sm:block hidden">Compare</div>
             </div>
 

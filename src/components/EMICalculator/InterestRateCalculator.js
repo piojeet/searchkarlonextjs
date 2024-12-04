@@ -58,7 +58,7 @@ const InterestRateCalculator = ({
   }, [isDragging]);
 
   return (
-    <div className="w-full max-w-md py-6">
+    <div className="w-full py-6">
       <div className="text-sm flex items-center justify-between pb-4">
         <div>Car Loan Amount</div>
         <div className="py-1 px-2 border-2 rounded-md font-semibold">

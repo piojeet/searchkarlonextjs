@@ -3,13 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import InterestRateCalculator from "./InterestRateCalculator";
 import LoanTimePeriod from "./LoanTimePeriod";
-import Dashboard from "./EMIGraph";
 import EMICalculate from "./EMICalculate";
-import SchedulerEMIDate from "./SchedulerEMIDate";
-import CarEMIForm from "./CarEMIForm";
-import EMITabBtns from "./EMITabBtns";
-import { useAuthContext } from "@/context/AuthContext";
-import CarForTco from "../CarForTco/CarForTco";
+
 
 const CarLoanAmountCalculator = ({
   min = 100000,
@@ -64,13 +59,12 @@ const CarLoanAmountCalculator = ({
     };
   }, [isDragging]);
 
-  const { tcoCalculatorAffordabilityActiveTab } = useAuthContext();
+
 
   return (
     <>
-      <EMITabBtns />
-      {tcoCalculatorAffordabilityActiveTab === "emi-calculator" && (
-        <div className="w-full lg:p-6 p-4 grid lg:grid-cols-3 gap-4">
+      
+      
           <div className="border-2 p-4 rounded-md">
             <EMICalculate />
             <div className="text-sm flex items-center justify-between pb-4">
@@ -117,26 +111,6 @@ const CarLoanAmountCalculator = ({
             <InterestRateCalculator />
             <LoanTimePeriod />
           </div>
-
-          <Dashboard />
-          <SchedulerEMIDate />
-        </div>
-      )}
-      {tcoCalculatorAffordabilityActiveTab === "card-affordability" && (
-        <div className="lg:hidden">
-          <CarEMIForm />
-        </div>
-      )}
-
-      <div className="lg:block hidden">
-      <CarEMIForm />
-      </div>
-
-      {tcoCalculatorAffordabilityActiveTab === 'car-tco' && (  
-          <div className="lg:hidden">
-            <CarForTco />
-          </div>
-      )}
     </>
   );
 };
