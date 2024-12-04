@@ -59,7 +59,7 @@ export default function ProductDiscriptionPrice() {
                 <div className="bg-gray-100 w-full rounded-md relative xl:mt-0 mt-2">
                     <div className="flex items-center sm:gap-2 gap-1 flex-wrap sm:text-sm text-xs py-2 px-2">
                         {tabs.map((tab) => (
-                            <button key={tab.id} className="block w-fit py-0.5 px-2 border border-gray-500 bg-gray-200 rounded-full" onClick={() => setActiveTab(tab.id)}>{tab.label}</button>
+                            <button key={tab.id} className={`block w-fit py-0.5 px-2 border   rounded-full ${activeTab === tab.id ? 'border-darkOrange text-darkOrange bg-whiteColor' : 'border-gray-500 bg-gray-200'}`} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>
                         ))}
 
                     </div>
