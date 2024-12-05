@@ -65,24 +65,32 @@ export default function ProductDiscriptionPrice() {
                     </div>
                     {activeTab === "tab1" && (
                         <div id="tab1">
-                            <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-[2000px]' : 'max-h-[200px]'}`}>
+                            <div className="mb-4">
+                                <div className="flex items-center justify-between py-2 px-4">
+                                    <div>Monthly EMI:</div>
+                                    <div className="font-semibold">₹ 7,918</div>
+                                </div>
+
+                                <div className="flex items-center justify-between py-2 px-4">
+                                    <div>Principal amount:</div>
+                                    <div className="font-semibold">₹ 5,00,000</div>
+                                </div>
+
+                                <div className="flex items-center justify-between py-2 px-4">
+                                    <div>Total Interest:</div>
+                                    <div className="font-semibold">1,65,132</div>
+                                </div>
+
+                                <div className="flex items-center justify-between py-2 border-2 rounded-md px-4">
+                                    <div>Total amount</div>
+                                    <div className="font-semibold">₹ 6,65,132</div>
+                                </div>
+                            </div>
+                            <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-[2000px]' : 'max-h-0'}`}>
                                 <CarLoanAmountCalculator />
 
                             </div>
-                            <button
-                                onClick={toggleDropdown}
-                                className="w-full py-2 px-4 rounded flex items-center justify-center border text-sm"
-                            >
-                                {isOpen ? (
-                                    <>
-                                        Collapse EMI Calculator <ChevronUp size={18} />
-                                    </>
-                                ) : (
-                                    <>
-                                        Expand EMI Calculator <ChevronDown size={18} />
-                                    </>
-                                )}
-                            </button>
+
                         </div>
                     )}
 
@@ -99,7 +107,20 @@ export default function ProductDiscriptionPrice() {
                         <div id="tab2">tab4</div>
                     )}
 
-
+                    <button
+                        onClick={toggleDropdown}
+                        className="w-full py-2 px-4 rounded flex items-center justify-center border text-sm"
+                    >
+                        {isOpen ? (
+                            <>
+                                Collapse EMI Calculator <ChevronUp size={18} />
+                            </>
+                        ) : (
+                            <>
+                                Expand EMI Calculator <ChevronDown size={18} />
+                            </>
+                        )}
+                    </button>
                 </div>
             </div>
         </>
