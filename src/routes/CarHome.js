@@ -50,7 +50,9 @@ export default function CarHome() {
         <div className="lg:block hidden">
         <CarForTco />
         </div>
+        <div className="lg:p-6 p-4">
         <GenralTools />
+        </div>
         <CarValidation />
         <Insight />
         <LatestNews />

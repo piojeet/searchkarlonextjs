@@ -5,6 +5,7 @@ import InterestRateCalculator from "../EMICalculator/InterestRateCalculator";
 import LoanTimePeriod from "../EMICalculator/LoanTimePeriod";
 import CarLoanAmountCalculator from "../EMICalculator/CarLoanAmountCalculator";
 import { useState } from "react";
+import DealerSearch from "./DealerSearch";
 
 export default function ProductDiscriptionPrice() {
 
@@ -20,10 +21,23 @@ export default function ProductDiscriptionPrice() {
 
     const tabs = [
         { id: "tab1", label: "EMI Calculator", },
-        { id: "tab2", label: "Get EMI Offer", },
-        { id: "tab3", label: "Get EMI Offer", },
-        { id: "tab4", label: "Get EMI Offer", },
+        { id: "tab2", label: "Dealer Search", },
+        { id: "tab3", label: "Services Center", },
     ];
+
+    const [openTabs, setOpenTabs] = useState({
+        tab1: false,
+        tab2: false,
+        tab3: false,
+    });
+
+    const toggleTabDropdown = (tabId) => {
+        setOpenTabs((prev) => ({
+            ...prev,
+            [tabId]: !prev[tabId],
+        }));
+    };
+
 
     return (
         <>
@@ -65,29 +79,31 @@ export default function ProductDiscriptionPrice() {
                     </div>
                     {activeTab === "tab1" && (
                         <div id="tab1">
-                            <div className="mb-4">
-                                <div className="flex items-center justify-between py-2 px-4">
-                                    <div>Monthly EMI:</div>
-                                    <div className="font-semibold">₹ 7,918</div>
-                                </div>
 
-                                <div className="flex items-center justify-between py-2 px-4">
-                                    <div>Principal amount:</div>
-                                    <div className="font-semibold">₹ 5,00,000</div>
-                                </div>
-
-                                <div className="flex items-center justify-between py-2 px-4">
-                                    <div>Total Interest:</div>
-                                    <div className="font-semibold">1,65,132</div>
-                                </div>
-
-                                <div className="flex items-center justify-between py-2 border-2 rounded-md px-4">
-                                    <div>Total amount</div>
-                                    <div className="font-semibold">₹ 6,65,132</div>
-                                </div>
-                            </div>
-                            <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-[2000px]' : 'max-h-0'}`}>
+                            <div className={`transition-all duration-300 overflow-hidden ${openTabs.tab1 ? 'max-h-[2000px]' : 'max-h-[200px]'}`}>
                                 <CarLoanAmountCalculator />
+
+                                <div className="mb-4">
+                                    <div className="flex items-center justify-between py-2 px-4">
+                                        <div>Monthly EMI:</div>
+                                        <div className="font-semibold">₹ 7,918</div>
+                                    </div>
+
+                                    <div className="flex items-center justify-between py-2 px-4">
+                                        <div>Principal amount:</div>
+                                        <div className="font-semibold">₹ 5,00,000</div>
+                                    </div>
+
+                                    <div className="flex items-center justify-between py-2 px-4">
+                                        <div>Total Interest:</div>
+                                        <div className="font-semibold">1,65,132</div>
+                                    </div>
+
+                                    <div className="flex items-center justify-between py-2 border-2 rounded-md px-4">
+                                        <div>Total amount</div>
+                                        <div className="font-semibold">₹ 6,65,132</div>
+                                    </div>
+                                </div>
 
                             </div>
 
@@ -95,32 +111,36 @@ export default function ProductDiscriptionPrice() {
                     )}
 
                     {activeTab === "tab2" && (
-                        <div id="tab2">tab2</div>
+                        <div id="tab2">
+                            <div className={`transition-all duration-300 overflow-hidden ${openTabs.tab2 ? 'max-h-[2000px]' : 'sm:max-h-[190px] max-h-[290px]'} p-4`}>
+                                <DealerSearch />
+                            </div>
+                        </div>
                     )}
 
                     {activeTab === "tab3" && (
-                        <div id="tab2">tab3</div>
+                        <div id="tab3">tab3</div>
                     )}
 
-
-                    {activeTab === "tab4" && (
-                        <div id="tab2">tab4</div>
-                    )}
 
                     <button
-                        onClick={toggleDropdown}
+                        onClick={() => toggleTabDropdown(activeTab)}
+                        aria-expanded={openTabs[activeTab]}
+                        aria-controls={`${activeTab}-content`}
                         className="w-full py-2 px-4 rounded flex items-center justify-center border text-sm"
                     >
-                        {isOpen ? (
+                        {openTabs[activeTab] ? (
                             <>
-                                Collapse EMI Calculator <ChevronUp size={18} />
+                                Collapse {tabs.find((tab) => tab.id === activeTab).label} <ChevronUp size={18} />
                             </>
                         ) : (
                             <>
-                                Expand EMI Calculator <ChevronDown size={18} />
+                                Expand {tabs.find((tab) => tab.id === activeTab).label} <ChevronDown size={18} />
                             </>
                         )}
                     </button>
+
+
                 </div>
             </div>
         </>
