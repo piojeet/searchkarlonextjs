@@ -97,6 +97,21 @@ const allCities = [
           document.removeEventListener("mousedown", handleClickOutside);
         };
       }, []);
+
+      
+      const [activeAccordion, setActiveAccordion] = useState([]);
+
+      const toggleAccordion = (id) => {
+        setActiveAccordion((prev) => {
+          if (prev.includes(id)) {
+            // If the ID is already active, close it
+            return prev.filter((accordionId) => accordionId !== id);
+          } else {
+            // Add the new ID to active accordions
+            return [...prev, id];
+          }
+        });
+      };
     
 
     return (
@@ -119,7 +134,9 @@ const allCities = [
             filteredCities,
             searchTerm ,
             setSelectedCity,
-            dropdownRef // Added for search functionality
+            dropdownRef,
+            activeAccordion,
+            toggleAccordion // Added for search functionality
             }}>
             {children}
         </AuthContext.Provider>

@@ -58,7 +58,7 @@ export default function CarVariant() {
 </div>
 
                     <div className="flex items-center gap-1 text-gray-500"><Filter size={16} /><span className="sm:text-sm text-xs">Filter By</span> <span className="sm:text-sm text-[0.5rem]">Fuel type, Transmission and Seating Capacity</span></div>
-                    <div className="flex sm:gap-4 gap-2 sm:text-sm text-xs">
+                    <div className="flex sm:gap-4 gap-1.5 sm:text-sm text-xs justify-center sm:justify-start">
                         <button className="py-1.5 border border-black sm:px-4 px-3 uppercase rounded-md bg-whiteColor hover:text-darkOrange hover:border-darkOrange">electric</button>
                         <div className="w-px bg-gray-500"></div>
                         <button className="py-1.5 border border-black sm:px-4 px-3 uppercase rounded-md bg-whiteColor hover:text-darkOrange hover:border-darkOrange">automatic</button>

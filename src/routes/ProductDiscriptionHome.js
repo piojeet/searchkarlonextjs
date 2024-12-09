@@ -3,6 +3,7 @@ import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/Compar
 import FeaturesMain from "@/components/Features/FeaturesMain";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
 import ProductDiscriptionHeroMain from "@/components/ProductDiscriptionHero/ProductDiscriptionHeroMain";
+import ProductionList from "@/components/ProductDiscriptionHero/ProductionList";
 import Review from "@/components/Review/Review";
 import RoadPriceVideosMain from "@/components/RoadPriceVideos/RoadPriceVideosMain";
 // import Footer from "@/components/Footer/Footer";
@@ -19,6 +20,7 @@ export default function ProductDiscriptionHome() {
         {/* <NavTop />
         <NavMiddle />
         <NavBottom /> */}
+        <ProductionList />
         <ProductDiscriptionHeroMain />
         <RoadPriceVideosMain />
         <SpecificationsMain />

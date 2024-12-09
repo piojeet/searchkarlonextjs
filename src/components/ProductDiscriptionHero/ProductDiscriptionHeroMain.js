@@ -1,3 +1,4 @@
+import CarSpecsNadFeatures from "./CarSpecsAndFeatures";
 import CarVariant from "./CarVariant";
 import HeroSelectCar from "./HeroSelectCar";
 import ProductDiscriptionScore from "./ProductDiscriptionScore";
@@ -10,6 +11,7 @@ export default function ProductDiscriptionHeroMain() {
         <ProductDiscriptionScore />
     </div>
     <CarVariant />
+    <CarSpecsNadFeatures />
     </>
   )
 }
