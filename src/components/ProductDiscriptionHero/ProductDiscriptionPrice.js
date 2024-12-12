@@ -6,6 +6,7 @@ import LoanTimePeriod from "../EMICalculator/LoanTimePeriod";
 import CarLoanAmountCalculator from "../EMICalculator/CarLoanAmountCalculator";
 import { useState } from "react";
 import DealerSearch from "./DealerSearch";
+import MonthlyAndPriceBreakUp from "./MonthlyAndPriceBreakUp";
 
 export default function ProductDiscriptionPrice() {
 
@@ -119,7 +120,11 @@ export default function ProductDiscriptionPrice() {
                     )}
 
                     {activeTab === "tab3" && (
-                        <div id="tab3">tab3</div>
+                        <div id="tab3">
+                            <div className={`transition-all duration-300 overflow-hidden ${openTabs.tab3 ? 'max-h-[2000px]' : 'max-h-[150px]'} p-4`}>
+                            <MonthlyAndPriceBreakUp />
+                            </div>
+                        </div>
                     )}
 
 

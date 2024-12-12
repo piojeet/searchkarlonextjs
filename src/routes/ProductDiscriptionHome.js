@@ -1,5 +1,7 @@
 import BookTestDrive from "@/components/BookTestDriveRightTyre/BookTestDrive";
+import CompareList from "@/components/compare/CompareList";
 import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
+import ElectricCars from "@/components/ElectricCars/ElectricCars";
 import FeaturesMain from "@/components/Features/FeaturesMain";
 import FindCarbyBrand from "@/components/FindCarbyBrand/FindCarbyBrand";
 import ProductDiscriptionHeroMain from "@/components/ProductDiscriptionHero/ProductDiscriptionHeroMain";
@@ -22,6 +24,8 @@ export default function ProductDiscriptionHome() {
         <NavBottom /> */}
         <ProductionList />
         <ProductDiscriptionHeroMain />
+        <CompareList />
+        <ElectricCars />
         <RoadPriceVideosMain />
         <SpecificationsMain />
         <FeaturesMain />
