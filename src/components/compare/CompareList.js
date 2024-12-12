@@ -69,13 +69,13 @@ export default function CompareList() {
   const renderCompareItems = () => {
     const defaultSlots = Array(4).fill(null); // Default 4 slots
     return (
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid sm:grid-cols-4 grid-cols-2 gap-4">
         {defaultSlots.map((_, index) => {
           const item = compareItems[index];
           return (
             <div
               key={index}
-              className="bg-white p-4 rounded-lg flex flex-col items-center gap-4 border border-gray-200 h-[150px]"
+              className="bg-white p-4 rounded-lg flex flex-col items-center sm:gap-4 gap-2 border border-gray-200 h-[150px] justify-center"
             >
               {item ? (
                 <>
@@ -87,15 +87,15 @@ export default function CompareList() {
                     />
                   </div>
                   <div className="text-center">
-                    <div className="font-semibold text-lg">{item.name}</div>
-                    <div className="font-semibold text-orange-600">
+                    <div className="font-semibold sm:text-lg text-sm">{item.name}</div>
+                    <div className="font-semibold text-orange-600 sm:text-base text-xs">
                       {item.price}
                     </div>
                   </div>
                 </>
               ) : (
                 <div className="flex items-center justify-center w-full text-gray-400 h-full">
-                  <span><PlusCircle className="size-16" /></span>
+                  <span><PlusCircle className="sm:size-16 size-10" /></span>
                 </div>
               )}
             </div>
@@ -108,14 +108,14 @@ export default function CompareList() {
   return (
     <div className="lg:p-6 p-4 bg-gray-100">
       {/* Title */}
-      <div className="text-lg font-semibold">
+      <div className="sm:text-lg text-base font-semibold">
         Mahindra XUV700 Specifications and Features
       </div>
 
       {/* Car List */}
       <div className="mt-4 relative">
       <Swiper
-            slidesPerView={1}
+            slidesPerView={2}
             spaceBetween={15}
             ref={swiperRef}
             navigation={{
@@ -126,8 +126,8 @@ export default function CompareList() {
             className="mySwiper mt-4"
 
             breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
             }}
           >
@@ -136,7 +136,7 @@ export default function CompareList() {
           return (
             <SwiperSlide
               key={car.id}
-              className="bg-white p-4 rounded-lg !flex justify-between items-center gap-4"
+              className="bg-white p-4 rounded-lg !flex sm:justify-between justify-center items-center sm:gap-4 gap-2 sm:!flex-row !flex-col"
             >
               {/* Car Image */}
               <div className="p-0 flex items-center justify-center">
@@ -148,18 +148,18 @@ export default function CompareList() {
               </div>
               {/* Car Details */}
               <div className="space-y-4">
-                <div>
-                  <div className="font-semibold text-lg">{car.name}</div>
-                  <div className="font-semibold text-orange-600">{car.price}</div>
+                <div className="text-center">
+                  <div className="font-semibold sm:text-lg text-sm">{car.name}</div>
+                  <div className="font-semibold text-orange-600 sm:text-base text-xs">{car.price}</div>
                 </div>
                 {/* Compare Button */}
                 <button
                   className={`${
                     isCompared ? "bg-orange-600" : "bg-gray-500"
-                  } text-white px-3 py-2 rounded-full inline-flex gap-1`}
+                  } text-white px-3 py-2 rounded-full inline-flex gap-1 sm:text-sm text-xs`}
                   onClick={() => toggleCompare(car)}
                 >
-                  {isCompared ? <MinusCircle /> : <PlusCircle />}
+                  {isCompared ? <MinusCircle className="size-4 sm:size-5" /> : <PlusCircle className="size-4 sm:size-5" />}
                   {isCompared ? "Remove" : "Compare"}
                 </button>
               </div>
@@ -172,7 +172,7 @@ export default function CompareList() {
           <button className={`swiper-button-prev-listc py-3 rounded-md text-whiteColor bg-lightOrange absolute left-0 top-[40%] -translate-y-1/2 z-50 cursor-pointer ${isAtStart ? 'hidden' : ''}`}><ChevronLeft /></button>
       </div>
 
-      <div className="size-8 bg-black text-whiteColor rounded-full content-center text-center mx-auto mt-2">OR</div>
+      <div className="sm:size-8 size-6 sm:text-sm text-xs bg-black text-whiteColor rounded-full content-center text-center mx-auto mt-2">OR</div>
 
       {/* Compare Section */}
       <div>
@@ -182,17 +182,17 @@ export default function CompareList() {
             <input
               type="text"
               placeholder="Search Mahindra XUV700"
-              className="outline-none border-none w-full py-2 px-3"
+              className="outline-none border-none w-full py-2 px-3 sm:text-sm text-xs"
             />
             <Search className="mx-2 text-gray-500" />
           </div>
 
           {/* Compared Items */}
-          <div className="bg-white mt-2 p-4 rounded-md">
+          <div className="bg-white mt-2 sm:p-4 p-2 rounded-md">
             {renderCompareItems()}
           </div>
 
-          <button className="block w-fit mx-auto mt-2 py-2 px-4 bg-darkOrange rounded-full text-whiteColor">Compare</button>
+          <button className="block w-fit mx-auto mt-2 py-2 px-4 bg-darkOrange rounded-full text-whiteColor sm:text-sm text-xs">Compare</button>
         </form>
       </div>
     </div>

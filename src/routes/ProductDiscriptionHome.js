@@ -1,4 +1,6 @@
+import BodyFillter from "@/components/BodyFillter/BodyFillter";
 import BookTestDrive from "@/components/BookTestDriveRightTyre/BookTestDrive";
+import CarComparison from "@/components/CarComparison/CarComparison";
 import CompareList from "@/components/compare/CompareList";
 import ComparePriceandFeatures from "@/components/ComparePriceandFeatures/ComparePriceandFeatures";
 import ElectricCars from "@/components/ElectricCars/ElectricCars";
@@ -26,6 +28,8 @@ export default function ProductDiscriptionHome() {
         <ProductDiscriptionHeroMain />
         <CompareList />
         <ElectricCars />
+        <CarComparison />
+        <BodyFillter />
         <RoadPriceVideosMain />
         <SpecificationsMain />
         <FeaturesMain />

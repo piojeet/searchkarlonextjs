@@ -12,29 +12,29 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function ElectricCars() {
 
-        const swiperRef = useRef(null);
+        const swipereRef = useRef(null);
         const [isAtStart, setIsAtStart] = useState(true);
         const [isAtEnd, setIsAtEnd] = useState(false);
       
         const handleSlideChange = () => {
-          if (swiperRef.current) {
-            setIsAtStart(swiperRef.current.swiper.isBeginning);
-            setIsAtEnd(swiperRef.current.swiper.isEnd);
+          if (swipereRef.current) {
+            setIsAtStart(swipereRef.current.swiper.isBeginning);
+            setIsAtEnd(swipereRef.current.swiper.isEnd);
           }
         };
       
         useEffect(() => {
           // Initialize Swiper events after component mounts
-          if (swiperRef.current) {
-            swiperRef.current.swiper.on('slideChange', handleSlideChange);
-            swiperRef.current.swiper.on('reachEnd', handleSlideChange);
-            swiperRef.current.swiper.on('reachBeginning', handleSlideChange);
+          if (swipereRef.current) {
+            swipereRef.current.swiper.on('slideChange', handleSlideChange);
+            swipereRef.current.swiper.on('reachEnd', handleSlideChange);
+            swipereRef.current.swiper.on('reachBeginning', handleSlideChange);
           }
           return () => {
-            if (swiperRef.current) {
-              swiperRef.current.swiper.off('slideChange', handleSlideChange);
-              swiperRef.current.swiper.off('reachEnd', handleSlideChange);
-              swiperRef.current.swiper.off('reachBeginning', handleSlideChange);
+            if (swipereRef.current) {
+              swipereRef.current.swiper.off('slideChange', handleSlideChange);
+              swipereRef.current.swiper.off('reachEnd', handleSlideChange);
+              swipereRef.current.swiper.off('reachBeginning', handleSlideChange);
             }
           };
         }, []);
@@ -95,19 +95,20 @@ export default function ElectricCars() {
     selectedCategory === 'Cars' ? cars[selectedTab] : bikes[selectedTab];
 
   return (
-    <div className="p-4 bg-gray-100 min-h-screen">
-      {/* Header */}
+    <div className="lg:p-6 p-4 bg-gray-100">
+      <div className='flex flex-wrap justify-between'>
+        {/* Header */}
       <div className="text-center mb-4">
-        <h1 className="text-2xl font-bold">Top Electric Automobiles</h1>
+        <h3 className="sm:text-2xl text-lg font-bold">Top Electric Automobiles</h3>
       </div>
 
 
 
       {/* Cars/Bikes Toggle */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4 border border-gray-600 rounded-md p-1">
         <button
           onClick={() => setSelectedCategory('Cars')}
-          className={`px-6 py-2 font-medium ${
+          className={`px-6 py-2 font-medium sm:text-sm text-xs ${
             selectedCategory === 'Cars' ? 'text-white bg-darkOrange' : 'bg-gray-200'
           } rounded-l`}
         >
@@ -115,12 +116,13 @@ export default function ElectricCars() {
         </button>
         <button
           onClick={() => setSelectedCategory('Bikes')}
-          className={`px-6 py-2 font-medium ${
+          className={`px-6 py-2 font-medium sm:text-sm text-xs ${
             selectedCategory === 'Bikes' ? 'text-white bg-darkOrange' : 'bg-gray-200'
           } rounded-r`}
         >
           Bikes
         </button>
+      </div>
       </div>
 
             {/* Navigation Tabs */}
@@ -129,7 +131,7 @@ export default function ElectricCars() {
           <button
             key={tab}
             onClick={() => setSelectedTab(tab)}
-            className={`px-4 py-2 font-medium ${
+            className={`px-4 py-2 font-medium sm:text-sm text-xs ${
               selectedTab === tab
                 ? 'border-b-2 border-red-500 text-black'
                 : 'text-gray-500'
@@ -145,7 +147,7 @@ export default function ElectricCars() {
       <Swiper
             slidesPerView={1}
             spaceBetween={15}
-            ref={swiperRef}
+            ref={swipereRef}
             navigation={{
                 nextEl: '.swiper-button-next-electro',
                 prevEl: '.swiper-button-prev-electro',
@@ -168,9 +170,9 @@ export default function ElectricCars() {
               className="w-full rounded-t-lg"
             />
             <div className="p-4">
-              <h2 className="text-lg font-semibold">{item.name}</h2>
-              <p className="text-gray-600">{item.price}</p>
-              <button className="mt-4 px-4 py-2 text-sm hover:text-white hover:bg-darkOrange rounded w-full border-2 border-darkOrange text-darkOrange">
+              <h2 className="sm:text-lg text-sm font-semibold">{item.name}</h2>
+              <p className="text-gray-600 sm:text-sm text-xs">{item.price}</p>
+              <button className="mt-4 px-4 py-2 sm:text-sm text-xs hover:text-white hover:bg-darkOrange rounded w-full border-2 border-darkOrange text-darkOrange">
                 Check Latest Offers
               </button>
             </div>
@@ -187,7 +189,7 @@ export default function ElectricCars() {
       <div className="text-center mt-6">
         <a
           href="#"
-          className="text-blue-500 underline"
+          className="text-blue-500 underline sm:text-sm text-xs"
         >{`View all ${selectedTab} Electric ${selectedCategory} >>`}</a>
       </div>
     </div>
