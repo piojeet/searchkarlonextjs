@@ -2,6 +2,7 @@ import CarSpecsNadFeatures from "./CarSpecsAndFeatures";
 import CarVariant from "./CarVariant";
 import HeroSelectCar from "./HeroSelectCar";
 import ProductDiscriptionScore from "./ProductDiscriptionScore";
+import TabBtn from "./TabBtn";
 
 export default function ProductDiscriptionHeroMain() {
   return (
@@ -10,6 +11,7 @@ export default function ProductDiscriptionHeroMain() {
         <HeroSelectCar />
         <ProductDiscriptionScore />
     </div>
+    <TabBtn />
     <CarVariant />
     <CarSpecsNadFeatures />
     </>
